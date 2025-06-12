@@ -3,10 +3,11 @@ import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <div className=" Container">
-      <h1>MARIA JULIA</h1>
-      <h2>MARIA JULIA</h2>
-      <h2>MARIA JULIA</h2>
+    <div className={styles.container}>
+      <h1 className={styles.titulo}>MARIA JULIA</h1>
+      <h1>Majusi majusi maju maju maju maju majusi Majusi majusi maju maju maju maju majusi</h1>
+      <h2>Silas eu te amo</h2>
+      <h2>Majusi majusi maju maju maju maju majusi Majusi majusi maju maju maju maju majusiMajusi majusi maju maju maju maju majusi Majusi majusi maju maju maju maju majusi Majusi majusi maju maju maju maju majusi</h2>
     </div>
   );
 }
