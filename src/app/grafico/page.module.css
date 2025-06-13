@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    border: 10px solid purple;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.titulo{
+    font-size: 50px;
+   }   
+   
+  
+    
+    
