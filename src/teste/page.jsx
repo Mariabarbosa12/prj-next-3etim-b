@@ -9,6 +9,7 @@ export default function Teste() {
             <Link href={'/grafico'}>Grafico</Link> <br />
             <Link href={'/chat'}>Chat</Link> <br />
             <Link href={'/contatos'}>Contatos</Link> <br />
+            <Link href={'/perfil'}>Perfil</Link> <br />
         </div>
     );
 }
