@@ -1,15 +1,270 @@
-.container{
-    display: flex;
-    flex-direction: column;
-    border: 10px solid purple;
-    max-width: 100%;
-    align-items: center;
-    justify-content: center;
+.conteudo{
+  background-color: #E3F0FF;
+  display: grid;
+  grid-template-areas:
+    'nave     nave    nave  '
+    'desc     desc    desc'
+    'rede     rede    rede'
+    'contato  contato contato'
+    'artigo   artigo  artigo'
+    'roda     roda    roda  '
+  ;
+  text-align: center;
+  color:#003366;  
 }
-.titulo{
-    font-size: 50px;
-   }   
-   
+
+.contPrincipal,
+.rodape {
+  width: 100%;
+  padding: 20px;
+}
+
+.cabecalho {
+  grid-area: cabe;
+  width: 100%;
+  background-color: #95ABDC;
+}
+
+.nave {
+  grid-area: nave;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(180deg,
+      #7c92d0,
+      #e1f5ff);
+  box-shadow: 0px 2px 0px #e1f5ff;
+}
+
+.nave img {
+  height: 180px;
+  width: auto;
+}
+
+.iconeImg {
+  height: 5px;
+  width: 5px;
+}
+
+.entradaSite {
+  grid-area: desc;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.ajudaItem {
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+  width: 100%;
+  grid-area: rede;
+  overflow: visible;
+}
+
+.ajudaImg {
+  margin-top: 10rem;
+  height: 700px;
+  width: auto;
+}
+
+.ajudaImg img {
+  box-sizing: border-box;
+  transition: 0.5s;
+  opacity: 0.5;
+}
+
+.ajudaImg img:hover {
+  transform: scale(1.1);
+  transform-origin: center;
+  opacity: 1;
+  box-shadow: 0 3px 4px #003366;
+}
+
+.imgPricipal {
+  padding-bottom: 20px;
+  height: 900px;
+}
+
+.descricao {
+  width: 500px;
+  align-items: center;
+  text-align: left;
+  margin-top: 5rem;
+}
+
+.descricao p {
+  font-size: 30pt;
+}
+
+.areaContatos {
+  grid-area: contato;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 50px;
+  border-top: 2px solid #a0c4ff;
+}
+
+.listaContatos {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 25px;
+  padding: 20px;
+  text-align: center;
+}
+
+.listaContatos p {
+  margin-top: 5px;
+}
+
+.subTitulo {
+  text-align: center;
+  font-size: 30pt;
+}
+
+.contatoBotao {
+  padding: 5px 20px 5px 20px;
+  margin-top: 10px;
+  background-color: white;
+  border: none;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+.contatoBotao:hover {
+  transform: scale(1.1);
+  background-color: white;
+  border: solid 1px #AFC4E8;
+  color: black;
+}
+
+.artigos {
+  grid-area: artigo;
+  border-top: 2px solid #a0c4ff;
+
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.itemArtigos{
+  justify-content: center;
+}
+
+.rodape {
+  grid-area: roda;
+  width: 100%;
+}
+
+.siteFooter {
+  color: #003366;
+  padding: 40px 20px;
+  margin-top: 10px;
+  font-family: Arial, sans-serif;
+  border-top: 2px solid #a0c4ff;
+}
+
+.footerContainer {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footerQuote {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footerSections {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footerBox {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.footerBox h3 {
+  margin-bottom: 10px;
+}
+
+.footerBox ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footerBox ul li a {
+  text-decoration: none;
+  color: #003366;
+}
+
+.footerBox ul li a:hover {
+  text-decoration: underline;
+}
+
+.footerCopy {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 30px;
+}
+
+.siteFooter hr {
+  margin: 30px 0;
+  border: none;
+  border-top: 1px solid #a0c4ff;
+}
+
+
+.ulMenu {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.liMenu {
+  list-style: none;
+}
+
+.aMenu {
+  text-decoration: none;
+  font-size: 30px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 20px;
+  transition: 0.2s;
+  color: black;
+  background-color: #ffffff;
+}
+
+.aMenu:hover {
+  font-size: 36px;
+  box-shadow: 0px 2px 4px black;
+
+}
+
+.saberMais {
+  color: white;
+  border: solid 1px white;
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #AFC4E8;
+  font-size: 15pt;
+  transition: 0.5s all;
+
+}
+
+.saberMais:hover {
+  transform: scale(1.1);
+  background-color: white;
+  border: solid 1px #AFC4E8;
+  color: black;
+}
   
     
     
