@@ -11,7 +11,7 @@ export default function Teste() {
             <Link href={'/chat'}>Chat</Link> <br />
             <Link href={'/contatos'}>Contatos</Link> <br />
             <Link href={'/perfil'}>Perfil</Link> <br />
-            <Link href={'/perfiltc'}>Perfil tecnico</Link> <br />
+            <Link href={'/perfiltc'}>Perfil tecnico</Link> <br/>
         </div>
     );
 }

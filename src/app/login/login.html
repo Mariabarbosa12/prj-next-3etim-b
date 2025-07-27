@@ -2,168 +2,136 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Tela de Entrada - BLUVA</title>
+  <title>Login - BLUVA</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
+   
     body {
       font-family: "Lucida Sans", sans-serif;
-      background-image: url('../../../public/fundinho.png');
+      background-image: url('../../../public/fundo.png');
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
+      min-height: 100vh;
       display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .header {
-      width: 100%;
-      height: 60px;
-      background-color: white;
-      display: flex;
-      align-items: center;
       justify-content: center;
-      border-bottom: 2px solid #ccc;
-    }
-
-    .header img {
-      height: 30px;
-      margin-right: 10px;
-    }
-
-    .header span {
-      color: #0C1792;
-      font-size: 20px;
-      font-weight: bold;
-    }
-
-    .container {
-      background-color: rgba(255, 255, 255);
-      opacity: 78%;
-      width: 600px;
-      height: 350px;
-      padding: 30px;
-      border-radius: 20px;
-      margin-top: 40px;
-      display: flex;
-      flex-direction: column;
       align-items: center;
     }
 
-    .sensor-cards {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-      margin-bottom: 30px;
-    }
-
-    .card {
-      background-color: #cfe8ff;
-      border-radius: 10px;
-      width: 45%;
-      padding: 20px;
+    .login-container {
+      background-color: rgba(173, 216, 230, 0.85);
+      padding: 40px 30px;
+      border-radius: 15px;
       text-align: center;
-      color: #0C1792;
-      font-weight: bold;
+      width: 90%;
+      max-width: 400px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
     }
 
-    .card img {
-      width: 40px;
+    .login-container img {
+      width: 70px;
+      margin-bottom: 20px;
+    }
+
+    .login-container h1 {
+      font-size: 26px;
+      color: white;
       margin-bottom: 10px;
     }
 
-    .card p {
+    .login-container h2 {
       font-size: 18px;
-      margin-top: 10px;
+      color: white;
+      margin-bottom: 25px;
     }
 
-    .button-row {
-      display: flex;
-      justify-content: space-around;
+    input[type="text"],
+    input[type="password"] {
       width: 100%;
-    }
-
-    .icon-button {
-      background-color: #e0f0ff;
+      padding: 12px;
+      margin-bottom: 20px;
+      border-radius: 8px;
       border: none;
-      border-radius: 10px;
-      padding: 15px;
-      width: 60px;
-      height: 60px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      font-size: 14px;
+    }
+
+    .login-btn {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      background-color: white;
+      color: #333;
+      border: none;
+      border-radius: 8px;
       cursor: pointer;
-      transition: 0.3s;
-      margin-top: 60px;
+      font-weight: bold;
     }
 
-    .icon-button:hover {
-      background-color: #b8dcff;
+    .login-btn:hover {
+      background-color: #f0f0f0;
     }
 
-    .icon-button img {
-      width: 30px;
-      height: 30px;
+    .login-container p {
+      margin-top: 15px;
+      font-size: 14px;
+      color: white;
     }
 
-    #ligarbotao {
-      background-color: #74b686; 
-    }
-
-    #ligarbotao.off {
-      background-color: #dd5a4c; 
+    .login-container a {
+      color: #fff;
+      text-decoration: underline;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
 
-  <div class="header">
-    <img src="../../../public/logo.png">
-    <span>BLUVA</span>
-  </div>
+  <div class="login-container">
+    <img src="usu.png" alt="Usuário">
+    <h1>Login</h1>
+    <h2 id="tipoTitulo">Entrar como: </h2>
 
-  <div class="container">
-    <div class="sensor-cards">
-      <div class="card">
-        <h3>UMIDADE</h3>
-        <img src="'../../../../../public/umidade.png" >
-        <p>100%</p>
-      </div>
-      <div class="card">
-        <h3>TEMPERATURA</h3>
-        <img src="'../../../../../public/temperatura.png" >
-        <p>100%</p>
-      </div>
-    </div>
+    <input type="text" placeholder="Nome de usuário ou e-mail" id="usuario">
+    <input type="password" placeholder="Senha" id="senha">
 
-    <div class="button-row">
-      <button class="icon-button"><img src="'../../../../../public/gota.png"
-         onclick="window.location.href='outra_pagina.html'"></button>
+    <button class="login-btn" onclick="entrar()">Entrar</button>
 
-      <button class="icon-button"><img src="'../../../../../public/user.png" 
-        onclick="window.location.href='outra_pagina.html'"></button>
-
-      <button class="icon-button"><img src="'../../../../../public/ajuda.png" 
-        onclick="window.location.href='outra_pagina.html'" ></button>
-        
-      <button class="icon-button" id="ligarbotao" onclick="togglePower()">
-        <img src="'../../../../../public/liga.png" alt="Power">
-      </button>
-    </div>
+    <p>Não tem uma conta? <a id="linkCadastro" href="#">Cadastre-se</a></p>
   </div>
 
   <script>
-    function togglePower() {
-      const btn = document.getElementById('ligarbotao');
-      btn.classList.toggle('off');
+    let tipo = "usuario"; // valor padrão
+
+    function obterTipo() {
+      const params = new URLSearchParams(window.location.search);
+      tipo = params.get("tipo") || "usuario"; // "usuario" ou "tecnico"
+
+      const tipoTitulo = document.getElementById("tipoTitulo");
+      const linkCadastro = document.getElementById("linkCadastro");
+
+      if (tipo === "tecnico") {
+        tipoTitulo.textContent = "Entrar como: Técnico";
+        linkCadastro.href = "cadastro.html?tipo=tecnico";
+      } else {
+        tipoTitulo.textContent = "Entrar como: Usuário";
+        linkCadastro.href = "cadastro.html?tipo=usuario";
+      }
     }
+
+    function entrar() {
+      const usuario = document.getElementById("usuario").value;
+      const senha = document.getElementById("senha").value;
+
+      if (usuario === "" || senha === "") {
+        alert("Preencha todos os campos.");
+        return;
+      }
+
+      alert(`Login como ${tipo} realizado com sucesso!`);
+
+    }
+
+    window.onload = obterTipo;
   </script>
 
 </body>
