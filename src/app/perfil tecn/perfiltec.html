@@ -2,13 +2,13 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Tela de Entrada - BLUVA</title>
+  <title>Perfil do Técnico - BLUVA</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
 
     body {
@@ -17,9 +17,11 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
+      min-height: 100vh;
       display: flex;
-      flex-direction: column;
+      justify-content: center;
       align-items: center;
+      flex-direction: column;
     }
 
     .header {
@@ -29,6 +31,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      position: relative;
       border-bottom: 2px solid #ccc;
     }
 
@@ -44,82 +47,120 @@
     }
 
     .container {
-      background-color: rgba(255, 255, 255);
-      opacity: 78%;
-      width: 600px;
-      height: 350px;
+      background-color: rgba(255, 255, 255, 0.78);
+      width: 90%;
+      max-width: 700px;
       padding: 30px;
-      border-radius: 20px;
-      margin-top: 40px;
+      border-radius: 15px;
       display: flex;
       flex-direction: column;
-      align-items: center;
-    }
-
-    .sensor-cards {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-      margin-bottom: 30px;
-    }
-
-    .card {
-      background-color: #cfe8ff;
-      border-radius: 10px;
-      width: 45%;
-      padding: 20px;
-      text-align: center;
-      color: #0C1792;
-      font-weight: bold;
-    }
-
-    .card img {
-      width: 40px;
-      margin-bottom: 10px;
-    }
-
-    .card p {
-      font-size: 18px;
       margin-top: 10px;
     }
 
-    .button-row {
+    h2 {
+      margin-bottom: 20px;
+      font-size: 22px;
+      color: #000000;
+      text-align: center;
+    }
+
+    .profile-content {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
+      width: 100%;
+      align-items: flex-start;
+    }
+
+    .info-section {
+      width: 60%;
+    }
+
+    .button-section {
+      width: 35%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    .perfil-info {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: 20px;
+    }
+
+    .perfil-info img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+
+    .perfil-info div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .perfil-info span {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .input-info {
+      margin-bottom: 15px;
+    }
+
+    .input-info input {
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      font-size: 14px;
       width: 100%;
     }
 
-    .icon-button {
-      background-color: #e0f0ff;
-      border: none;
-      border-radius: 10px;
-      padding: 15px;
-      width: 60px;
-      height: 60px;
+    .cccontainer {
+      background-color: #b3d7ff;
+      padding: 20px;
+      border-radius: 15px;
       display: flex;
-      align-items: center;
-      justify-content: center;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .cccontainer .info-section,
+    .cccontainer .button-section {
+      width: 48%;
+    }
+
+    .button-section button {
+      background-color: #ffffff;
+      border: none;
+      padding: 10px;
+      margin-bottom: 10px;
+      width: 100%;
+      border-radius: 10px;
       cursor: pointer;
+      font-weight: bold;
       transition: 0.3s;
-      margin-top: 60px;
+      margin-top: 15px;
     }
 
-    .icon-button:hover {
-      background-color: #b8dcff;
+    .button-section button:hover {
+      background-color: #80b19d;
     }
 
-    .icon-button img {
-      width: 30px;
-      height: 30px;
+    .button-section button.green-button {
+      background-color: #4CAF50;
+      color: white;
     }
 
-    #ligarbotao {
-      background-color: #74b686; 
+    .button-section button.green-button:hover {
+      background-color: #45a049;
     }
 
-    #ligarbotao.off {
-      background-color: #dd5a4c; 
-    }
   </style>
 </head>
 <body>
@@ -130,41 +171,47 @@
   </div>
 
   <div class="container">
-    <div class="sensor-cards">
-      <div class="card">
-        <h3>UMIDADE</h3>
-        <img src="'../../../../../public/umidade.png" >
-        <p>100%</p>
+    <h2>PERFIL DO TÉCNICO</h2>
+
+    <div class="cccontainer">
+      
+      <div class="info-section">
+        <div class="perfil-info">
+          <img src="../../../public/usu.png" alt="Foto de Perfil">
+          <div>
+            <span>APELIDO:</span>
+            <input type="text" value="Técnico123" disabled>
+          </div>
+        </div>
+
+        <div class="input-info">
+          <span>NOME:</span>
+          <input type="text" value="João Silva" disabled>
+
+          <span>EMAIL:</span>
+          <input type="text" value="joao.silva@email.com" disabled>
+
+          <span>NÚMERO DE TELEFONE:</span>
+          <input type="text" value="(11) 91234-5678" disabled>
+
+          <span>SENHA:</span>
+          <input type="password" value="******" disabled>
+        </div>
       </div>
-      <div class="card">
-        <h3>TEMPERATURA</h3>
-        <img src="'../../../../../public/temperatura.png" >
-        <p>100%</p>
+
+      <div class="button-section">
+        <button>ALTERAR FOTO DE PERFIL</button>
+        <button>ALTERAR APELIDO</button>
+        <button>ALTERAR DADOS PESSOAIS</button>
+        <button>EXCLUIR CONTA</button>
+        <button>SAIR DA CONTA</button>
+
+        <a href="../contatos/contatos.html">
+          <button class="green-button">IR PARA CONTATOS</button>
+        </a>
       </div>
-    </div>
-
-    <div class="button-row">
-      <button class="icon-button"><img src="'../../../../../public/gota.png"
-         onclick="window.location.href='outra_pagina.html'"></button>
-
-      <button class="icon-button"><img src="'../../../../../public/user.png" 
-        onclick="window.location.href='outra_pagina.html'"></button>
-
-      <button class="icon-button"><img src="'../../../../../public/ajuda.png" 
-        onclick="window.location.href='outra_pagina.html'" ></button>
-        
-      <button class="icon-button" id="ligarbotao" onclick="togglePower()">
-        <img src="'../../../../../public/liga.png" alt="Power">
-      </button>
     </div>
   </div>
-
-  <script>
-    function togglePower() {
-      const btn = document.getElementById('ligarbotao');
-      btn.classList.toggle('off');
-    }
-  </script>
 
 </body>
 </html>

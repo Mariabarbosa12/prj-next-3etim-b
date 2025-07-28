@@ -104,19 +104,17 @@
       margin-top: 60px;
     }
 
-   
-
     .icon-button img {
       width: 30px;
       height: 30px;
     }
 
     #ligarbotao {
-      background-color: #74b686; 
+      background-color: #74b686;
     }
 
     #ligarbotao.off {
-      background-color: #dd5a4c; 
+      background-color: #dd5a4c;
     }
   </style>
 </head>
@@ -131,28 +129,37 @@
     <div class="sensor-cards">
       <div class="card">
         <h3>UMIDADE</h3>
-        <img src="'../../../../../public/umidade.png" >
+        <img src="../../../public/umidade.png">
         <p>100%</p>
       </div>
       <div class="card">
         <h3>TEMPERATURA</h3>
-        <img src="'../../../../../public/temperatura.png" >
+        <img src="../../../public/temperatura.png">
         <p>100%</p>
       </div>
     </div>
 
     <div class="button-row">
-      <button class="icon-button"><img src="'../../../../../public/gota.png"
-        href='./../grafico/grafico.html'"></button>
+      <a href="../grafico/grafico.html">
+        <button class="icon-button">
+          <img src="../../../public/gota.png" alt="Gráfico">
+        </button>
+      </a>
 
-      <button class="icon-button"><img src="'../../../../../public/user.png" 
-        href='./../perfil/perfil.html'"></button>
+      <a href="../perfil/perfil.html">
+        <button class="icon-button">
+          <img src="../../../public/user.png" alt="Perfil">
+        </button>
+      </a>
 
-      <button class="icon-button"><img src="'../../../../../public/ajuda.png" 
-        href='./../chat/chat.html'" ></button>
-        
+      <a href="../chat/chat.html">
+        <button class="icon-button">
+          <img src="../../../public/ajuda.png" alt="Ajuda">
+        </button>
+      </a>
+      
       <button class="icon-button" id="ligarbotao" onclick="togglePower()">
-        <img src="'../../../../../public/liga.png" alt="Power">
+        <img src="../../../public/liga.png" alt="Power">
       </button>
     </div>
   </div>

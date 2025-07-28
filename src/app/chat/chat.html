@@ -40,7 +40,7 @@
       border: none;
       font-size: 30px;
       cursor: pointer;
-      color: #333;
+      
     }
 
     .header img {
@@ -56,7 +56,7 @@
       align-items: center;
     }
 
-    .chat-container {
+    .contato-chat {
       background-color: rgba(255, 255, 255, 0.78);
       width: 90%;
       max-width: 700px;
@@ -69,7 +69,7 @@
       justify-content: space-between;
     }
 
-    .chat-header {
+    .cabecalho-chat {
       font-weight: bold;
       background-color: #b3d7ff;
       padding: 8px 16px;
@@ -78,7 +78,7 @@
       margin-bottom: 10px;
     }
 
-    .chat-messages {
+    .mensagens-chat {
       flex: 1;
       overflow-y: auto;
       display: flex;
@@ -86,7 +86,7 @@
       gap: 10px;
     }
 
-    .msg-left {
+    .msg-esquerda {
       align-self: flex-start;
       background-color: #b3d7ff;
       padding: 10px 15px;
@@ -94,7 +94,7 @@
       max-width: 70%;
     }
 
-    .msg-right {
+    .msg-direita {
       align-self: flex-end;
       background-color: #91cba3;
       padding: 10px 15px;
@@ -102,12 +102,12 @@
       max-width: 70%;
     }
 
-    .chat-input {
+    .entrada-chat {
       display: flex;
       margin-top: 15px;
     }
 
-    .chat-input input {
+    .entrada-chat input {
       flex: 1;
       padding: 12px;
       border-radius: 10px;
@@ -117,7 +117,7 @@
       font-style: italic;
     }
 
-    .chat-input button {
+    .entrada-chat button {
       background-color: #b3d7ff;
       border: none;
       border-radius: 50%;
@@ -130,34 +130,51 @@
       justify-content: center;
     }
 
-    .chat-input button img {
+    .entrada-chat button img {
       width: 20px;
       height: 20px;
     }
   </style>
+  <script>
+    function enviarMensagem() {
+      const input = document.getElementById("input-chat");
+      const mensagem = input.value.trim();
+      if (mensagem) {
+        const mensagensContainer = document.getElementById("mensagens");
+        const novaMensagem = document.createElement("div");
+        novaMensagem.classList.add("msg-direita");
+        novaMensagem.textContent = mensagem;
+        mensagensContainer.appendChild(novaMensagem);
+        input.value = "";
+        mensagensContainer.scrollTop = mensagensContainer.scrollHeight;
+      }
+    }
+  </script>
 </head>
 <body>
 
   <div class="header">
-    <button class="back-button" onclick="window.location.href='../home/home.html'">&#x2039;</button>
-    <img src="../../../public/logo.png" alt="Logo">
+   <button class="back-button" onclick="window.location.href='../home/home.html'">
+  <img src="../../../public/voltar.png" />
+</button>  
+<img src="../../../public/logo.png" >
     <span>BLUVA</span>
   </div>
 
-  <div class="chat-container">
-    <div class="chat-header">Nome Sobrenome</div>
+  <div class="contato-chat">
+    <div class="cabecalho-chat">Nome Sobrenome</div>
 
-    <div class="chat-messages">
-      <div class="msg-left">Olá! Como posso te ajudar?</div>
-      <div class="msg-right">Estou com dúvida na irrigação.</div>
-      <div class="msg-right">Qual o melhor horário?</div>
-      <div class="msg-left">Recomenda-se no início da manhã ou fim da tarde.</div>
+    <div class="mensagens-chat" id="mensagens">
+      <div class="msg-esquerda">Olá! Como posso te ajudar?</div>
+      <div class="msg-direita">Estou com dúvida na irrigação.</div>
+      <div class="msg-direita">Qual o melhor horário?</div>
+      <div class="msg-esquerda">Recomenda-se no início da manhã ou fim da tarde.</div>
     </div>
 
-    <div class="chat-input">
-      <input type="text" placeholder="Digite sua dúvida...">
-      <button>
-        <img src="../../../public/enviar.png" alt="Enviar">
+    <div class="entrada-chat">
+      <input type="text" id="input-chat" placeholder="Digite sua dúvida...">
+      <button onclick="enviarMensagem()">
+        <img src="../../../public/enviar.png" 
       </button>
     </div>
   </div>
