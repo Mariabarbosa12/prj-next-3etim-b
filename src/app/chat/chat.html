@@ -2,13 +2,13 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Tela de Entrada - BLUVA</title>
+  <title>Chat - BLUVA</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
 
     body {
@@ -17,9 +17,9 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
-      align-items: center;
     }
 
     .header {
@@ -29,7 +29,18 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      position: relative;
       border-bottom: 2px solid #ccc;
+    }
+
+    .back-button {
+      position: absolute;
+      left: 15px;
+      background: none;
+      border: none;
+      font-size: 30px;
+      cursor: pointer;
+      color: #333;
     }
 
     .header img {
@@ -41,130 +52,115 @@
       color: #0C1792;
       font-size: 20px;
       font-weight: bold;
-    }
-
-    .container {
-      background-color: rgba(255, 255, 255);
-      opacity: 78%;
-      width: 600px;
-      height: 350px;
-      padding: 30px;
-      border-radius: 20px;
-      margin-top: 40px;
       display: flex;
-      flex-direction: column;
       align-items: center;
     }
 
-    .sensor-cards {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-      margin-bottom: 30px;
-    }
-
-    .card {
-      background-color: #cfe8ff;
-      border-radius: 10px;
-      width: 45%;
+    .chat-container {
+      background-color: rgba(255, 255, 255, 0.78);
+      width: 90%;
+      max-width: 700px;
+      height: 500px;
+      margin: 30px auto;
+      border-radius: 15px;
       padding: 20px;
-      text-align: center;
-      color: #0C1792;
-      font-weight: bold;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
-    .card img {
-      width: 40px;
+    .chat-header {
+      font-weight: bold;
+      background-color: #b3d7ff;
+      padding: 8px 16px;
+      border-radius: 5px 5px 0 0;
+      align-self: flex-start;
       margin-bottom: 10px;
     }
 
-    .card p {
-      font-size: 18px;
-      margin-top: 10px;
-    }
-
-    .button-row {
+    .chat-messages {
+      flex: 1;
+      overflow-y: auto;
       display: flex;
-      justify-content: space-around;
-      width: 100%;
+      flex-direction: column;
+      gap: 10px;
     }
 
-    .icon-button {
-      background-color: #e0f0ff;
-      border: none;
+    .msg-left {
+      align-self: flex-start;
+      background-color: #b3d7ff;
+      padding: 10px 15px;
+      border-radius: 20px;
+      max-width: 70%;
+    }
+
+    .msg-right {
+      align-self: flex-end;
+      background-color: #91cba3;
+      padding: 10px 15px;
+      border-radius: 20px;
+      max-width: 70%;
+    }
+
+    .chat-input {
+      display: flex;
+      margin-top: 15px;
+    }
+
+    .chat-input input {
+      flex: 1;
+      padding: 12px;
       border-radius: 10px;
-      padding: 15px;
-      width: 60px;
-      height: 60px;
+      border: none;
+      background-color: #b3d7ff;
+      font-size: 14px;
+      font-style: italic;
+    }
+
+    .chat-input button {
+      background-color: #b3d7ff;
+      border: none;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      margin-left: 10px;
+      cursor: pointer;
       display: flex;
       align-items: center;
       justify-content: center;
-      cursor: pointer;
-      transition: 0.3s;
-      margin-top: 60px;
     }
 
-    .icon-button:hover {
-      background-color: #b8dcff;
-    }
-
-    .icon-button img {
-      width: 30px;
-      height: 30px;
-    }
-
-    #ligarbotao {
-      background-color: #74b686; 
-    }
-
-    #ligarbotao.off {
-      background-color: #dd5a4c; 
+    .chat-input button img {
+      width: 20px;
+      height: 20px;
     }
   </style>
 </head>
 <body>
 
   <div class="header">
-    <img src="../../../public/logo.png">
+    <button class="back-button" onclick="window.location.href='../home/home.html'">&#x2039;</button>
+    <img src="../../../public/logo.png" alt="Logo">
     <span>BLUVA</span>
   </div>
 
-  <div class="container">
-    <div class="sensor-cards">
-      <div class="card">
-        <h3>UMIDADE</h3>
-        <img src="'../../../../../public/umidade.png" >
-        <p>100%</p>
-      </div>
-      <div class="card">
-        <h3>TEMPERATURA</h3>
-        <img src="'../../../../../public/temperatura.png" >
-        <p>100%</p>
-      </div>
+  <div class="chat-container">
+    <div class="chat-header">Nome Sobrenome</div>
+
+    <div class="chat-messages">
+      <div class="msg-left">Olá! Como posso te ajudar?</div>
+      <div class="msg-right">Estou com dúvida na irrigação.</div>
+      <div class="msg-right">Qual o melhor horário?</div>
+      <div class="msg-left">Recomenda-se no início da manhã ou fim da tarde.</div>
     </div>
 
-    <div class="button-row">
-      <button class="icon-button"><img src="'../../../../../public/gota.png"
-         onclick="window.location.href='outra_pagina.html'"></button>
-
-      <button class="icon-button"><img src="'../../../../../public/user.png" 
-        onclick="window.location.href='outra_pagina.html'"></button>
-
-      <button class="icon-button"><img src="'../../../../../public/ajuda.png" 
-        onclick="window.location.href='outra_pagina.html'" ></button>
-        
-      <button class="icon-button" id="ligarbotao" onclick="togglePower()">
-        <img src="'../../../../../public/liga.png" alt="Power">
+    <div class="chat-input">
+      <input type="text" placeholder="Digite sua dúvida...">
+      <button>
+        <img src="../../../public/enviar.png" alt="Enviar">
       </button>
     </div>
   </div>
-
-  <script>
-    function togglePower() {
-      const btn = document.getElementById('ligarbotao');
-      btn.classList.toggle('off');
-    }
-  </script>
 
 </body>
 </html>

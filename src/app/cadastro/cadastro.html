@@ -1,11 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Login - BLUVA</title>
+  <title>Cadastro - BLUVA</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-   
     body {
       font-family: "Lucida Sans", sans-serif;
       background-image: url('../../../public/fundo.png');
@@ -18,39 +18,40 @@
       align-items: center;
     }
 
-    .login-container {
+    .cadastro-container {
       background-color: rgba(173, 216, 230);
       opacity: 80%;
       padding: 40px 30px;
       border-radius: 15px;
       text-align: center;
       width: 400px;
-      height: 340px;
+      height: 390px;
       box-shadow: 0 0 10px rgba(0,0,0,0.3);
     }
 
-    .login-container img {
+    .cadastro-container img {
       width: 90px;
       margin-bottom: 10px;
     }
 
-    .login-container h1 {
-      font-size: 26px;
+    .cadastro-container h1 {
+      font-size: 24px;
       color: white;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
     }
 
     input[type="text"],
+    input[type="email"],
     input[type="password"] {
       width: 100%;
       padding: 12px;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
       border-radius: 8px;
       border: none;
       font-size: 14px;
     }
 
-    .login-btn {
+    .cadastro-btn {
       width: 100%;
       padding: 12px;
       font-size: 16px;
@@ -62,38 +63,25 @@
       font-weight: bold;
     }
 
-    .login-btn:hover {
+    .cadastro-btn:hover {
       background-color: #f0f0f0;
-    }
-
-    .login-container p {
-      margin-top: 15px;
-      font-size: 14px;
-      color: white;
-    }
-
-    .login-container a {
-      color: #fff;
-      text-decoration: underline;
-      cursor: pointer;
     }
   </style>
 </head>
 <body>
 
-  <div class="login-container">
-    <img src="../../../public/usu.png">
-    <h1>Login</h1>
+  <div class="cadastro-container">
+    <img src="../../../public/usu.png" alt="Ícone de usuário">
+    <h1>Cadastre-se</h1>
 
-    <input type="text" placeholder="Nome de usuário ou e-mail" id="usuario">
+    <input type="text" placeholder="Nome de usuario" id="nomeUsuario">
+    <input type="email" placeholder="E-mail" id="email">
     <input type="password" placeholder="Senha" id="senha">
+    <input type="password" placeholder="Confirme a senha" id="confirmarSenha">
 
-    <button class="login-btn" onclick="entrar()">Entrar</button>
+   <button class="cadastro-btn" onclick="window.location.href='../home/home.html'">Cadastre-se</button>
 
-    <p>Não tem uma conta? <a id="linkCadastro" href="../cadastro/cadastro.html">Cadastre-se</a></p>
-  </div>
-
- 
 
 </body>
 </html>
+

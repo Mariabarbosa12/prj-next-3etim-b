@@ -97,26 +97,12 @@
       <option value="tecnico">Técnico</option>
     </select>
 
-    <button onclick="prosseguir()">Prosseguir</button>
+    <button href='../login/login.html'>Prosseguir</button>
+
    
 </div>
 
-   <script>
-    function prosseguir() {
-      var tipo = document.getElementById("tipoUsuario").value;
-
-      switch (tipo) {
-        case "usuario":
-          window.location.href = "login.html? tipo =usuario";
-          break;
-        case "tecnico":
-          window.location.href = "login.html?tipo=tecnico";
-          break;
-        default:
-          alert("Por favor, selecione uma opção.");
-      }
-    }
-  </script>
+  
 
 </body>
 </html>
