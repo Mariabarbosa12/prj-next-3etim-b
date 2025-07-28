@@ -19,30 +19,25 @@
     }
 
     .login-container {
-      background-color: rgba(173, 216, 230, 0.85);
+      background-color: rgba(173, 216, 230);
+      opacity: 80%;
       padding: 40px 30px;
       border-radius: 15px;
       text-align: center;
-      width: 90%;
-      max-width: 400px;
+      width: 400px;
+      height: 340px;
       box-shadow: 0 0 10px rgba(0,0,0,0.3);
     }
 
     .login-container img {
-      width: 70px;
-      margin-bottom: 20px;
+      width: 90px;
+      margin-bottom: 10px;
     }
 
     .login-container h1 {
       font-size: 26px;
       color: white;
       margin-bottom: 10px;
-    }
-
-    .login-container h2 {
-      font-size: 18px;
-      color: white;
-      margin-bottom: 25px;
     }
 
     input[type="text"],
@@ -89,50 +84,16 @@
   <div class="login-container">
     <img src="../../../public/usu.png">
     <h1>Login</h1>
-    <h2 id="tipoTitulo">Entrar como: </h2>
 
     <input type="text" placeholder="Nome de usuário ou e-mail" id="usuario">
     <input type="password" placeholder="Senha" id="senha">
 
     <button class="login-btn" onclick="entrar()">Entrar</button>
 
-    <p>Não tem uma conta? <a id="linkCadastro" href="#">Cadastre-se</a></p>
+    <p>Não tem uma conta? <a id="linkCadastro" href="../cadastro/cadastro.html">Cadastre-se</a></p>
   </div>
 
-  <script>
-    let tipo = "usuario"; // valor padrão
-
-    function obterTipo() {
-      const params = new URLSearchParams(window.location.search);
-      tipo = params.get("tipo") || "usuario"; // "usuario" ou "tecnico"
-
-      const tipoTitulo = document.getElementById("tipoTitulo");
-      const linkCadastro = document.getElementById("linkCadastro");
-
-      if (tipo === "tecnico") {
-        tipoTitulo.textContent = "Entrar como: Técnico";
-        linkCadastro.href = "cadastro.html?tipo=tecnico";
-      } else {
-        tipoTitulo.textContent = "Entrar como: Usuário";
-        linkCadastro.href = "cadastro.html?tipo=usuario";
-      }
-    }
-
-    function entrar() {
-      const usuario = document.getElementById("usuario").value;
-      const senha = document.getElementById("senha").value;
-
-      if (usuario === "" || senha === "") {
-        alert("Preencha todos os campos.");
-        return;
-      }
-
-      alert(`Login como ${tipo} realizado com sucesso!`);
-
-    }
-
-    window.onload = obterTipo;
-  </script>
+ 
 
 </body>
 </html>
