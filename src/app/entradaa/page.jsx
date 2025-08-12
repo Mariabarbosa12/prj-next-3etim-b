@@ -1,9 +1,6 @@
 import styles from './page.module.css';
-import { useRouter } from 'next/router';
 
-export default function Entrada() {
-  const router = useRouter();
-
+export default function entrada() {
   return (
     <div className={styles.body}>
       <div className={styles.container}>
@@ -24,7 +21,7 @@ export default function Entrada() {
 
         <button
           className={styles.button}
-          onClick={() => router.push('/login/login')}
+          onClick={() => (window.location.href = '/login/login')}
         >
           Prosseguir
         </button>
@@ -32,4 +29,3 @@ export default function Entrada() {
     </div>
   );
 }
-

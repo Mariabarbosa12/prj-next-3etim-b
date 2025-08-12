@@ -1,15 +1,134 @@
-.container{
-    display: flex;
-    flex-direction: column;
-    border: 10px solid purple;
-    max-width: 100%;
-    align-items: center;
-    justify-content: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.titulo{
-    font-size: 50px;
-   }   
-   
+
+.body {
+  font-family: "Lucida Sans", sans-serif;
+  background-image: url('/fundinho.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-bottom: 2px solid #ccc;
+}
+
+.backButton {
+  position: absolute;
+  left: 15px;
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.header img {
+  height: 30px;
+  margin-right: 10px;
+}
+
+.header span {
+  color: #0c1792;
+  font-size: 34px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.contatoChat {
+  background-color: rgba(255, 255, 255, 0.78);
+  width: 90%;
+  max-width: 700px;
+  height: 700px;
+  margin: 30px auto;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 110px;
+}
+
+.cabecalhoChat {
+  font-weight: bold;
+  background-color: #b3d7ff;
+  font-size: 20px;
+  padding: 8px 16px;
+  border-radius: 5px 5px 0 0;
+  align-self: flex-start;
+  margin-bottom: 10px;
+}
+
+.mensagensChat {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.msgEsquerda {
+  align-self: flex-start;
+  background-color: #b3d7ff;
+  padding: 10px 15px;
+  border-radius: 20px;
+  max-width: 75%;
+}
+
+.msgDireita {
+  align-self: flex-end;
+  background-color: #91cba3;
+  padding: 10px 15px;
+  border-radius: 20px;
+  max-width: 75%;
+}
+
+.entradaChat {
+  display: flex;
+  margin-top: 15px;
+}
+
+.entradaChat input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background-color: #b3d7ff;
+  font-size: 17px;
+  font-style: italic;
+}
+
+.entradaChat button {
+  background-color: #b3d7ff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.entradaChat button img {
+  width: 30px;
+  height: 30px;
+}
+
   
     
     

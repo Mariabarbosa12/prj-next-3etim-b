@@ -23,6 +23,10 @@ h2 {
     font-size: 30px;
     margin: 15px;
   }
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 

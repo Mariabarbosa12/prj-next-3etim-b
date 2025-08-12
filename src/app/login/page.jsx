@@ -1,10 +1,41 @@
+"use client";
 
 import styles from "./page.module.css";
+import Image from "next/image";
+import Link from "next/link";
 
-export default function login() {
+export default function Login() {
   return (
-    <div className={styles.container}>
-      <h1 className={styles.titulo}>LOGIN</h1>
-        </div>
+    <main className={styles.loginContainer}>
+      <Image src="/usu.png" alt="Usuário" width={110} height={110} />
+      <h1>Login</h1>
+
+      <input
+        type="text"
+        placeholder="Nome de usuário ou e-mail"
+        id="usuario"
+        className={styles.input}
+      />
+      <input
+        type="password"
+        placeholder="Senha"
+        id="senha"
+        className={styles.input}
+      />
+
+      <button
+        className={styles.loginBtn}
+        onClick={() => window.location.href = "/home/home"}
+      >
+        Entrar
+      </button>
+
+      <p>
+        Não tem uma conta?{" "}
+        <Link href="/cadastro/cadastro">
+          <a className={styles.link}>Cadastre-se</a>
+        </Link>
+      </p>
+    </main>
   );
 }
