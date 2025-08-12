@@ -1,19 +1,24 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
 .body {
   background-image: url('/fundinho.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
 }
 
-.imgl {
-  height: 40px;
-  margin-right: 15px;
-}
 
 .container {
   background-color: rgba(255, 255, 255, 0.78);
@@ -21,19 +26,12 @@
   height: 410px;
   padding: 30px;
   border-radius: 10px;
-  margin-top: 160px;
+  margin-top: 180px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.titulo {
-  font-family: 'Poppins', sans-serif;
-  font-size: 28px;
-  color: black;
-  margin-top: 28px;
-  margin-bottom: 30px;
-}
 
 .iconButton {
   display: flex;
@@ -41,6 +39,22 @@
   justify-content: center;
   margin-bottom: 30px;
 }
+
+
+.imgl {
+  height: 60px;
+  margin-right: 15px;
+}
+
+
+.titulo {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  color: black;
+  margin-top: 28px;
+  margin-bottom: 30px;
+}
+
 
 .select {
   width: 100%;
@@ -53,6 +67,7 @@
   opacity: 100%;
   margin-top: 20px;
 }
+
 
 .button {
   width: 100%;
