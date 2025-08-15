@@ -18,7 +18,6 @@ export default function chat() {
     setInput("");
   }
 
-  // Scroll para o final quando mensagens mudam
   useEffect(() => {
     if (mensagensRef.current) {
       mensagensRef.current.scrollTop = mensagensRef.current.scrollHeight;
@@ -26,7 +25,7 @@ export default function chat() {
   }, [mensagens]);
 
   return (
-    <>
+    <div className={styles.body}>
       <div className={styles.header}>
         <button
           className={styles.backButton}
@@ -73,6 +72,6 @@ export default function chat() {
           </button>
         </div>
       </div>
-    </>
+    </div>
   );
 }

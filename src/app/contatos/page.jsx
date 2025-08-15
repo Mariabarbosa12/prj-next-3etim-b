@@ -26,7 +26,6 @@ export default function Contatos() {
         </button>
 
         <Image src="/logo.png" alt="Logo BLUVA" width={30} height={30} priority />
-
         <span>BLUVA</span>
       </div>
 
@@ -38,6 +37,7 @@ export default function Contatos() {
           <Link href="/chat/chat" className={styles.apelido}>
             @Usuario123
           </Link>
+          
         </div>
       </div>
     </div>

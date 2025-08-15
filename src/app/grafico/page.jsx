@@ -53,7 +53,6 @@ export default function grafico() {
       },
     });
 
-    // cleanup on unmount
     return () => {
       if (chartInstance) {
         chartInstance.destroy();
@@ -76,7 +75,7 @@ export default function grafico() {
       </div>
 
       <div className={styles.container}>
-        <h2>CONSUMO DE ÁGUA</h2>
+        <p className={styles.sm}>CONSUMO DE ÁGUA</p>
         <div className={styles.chartContainer}>
           <canvas ref={chartRef} />
         </div>

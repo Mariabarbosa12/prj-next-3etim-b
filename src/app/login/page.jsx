@@ -6,6 +6,7 @@ import Link from "next/link";
 
 export default function Login() {
   return (
+    <div className={styles.body}>
     <main className={styles.loginContainer}>
       <Image src="/usu.png" alt="Usuário" width={110} height={110} />
       <h1>Login</h1>
@@ -37,5 +38,6 @@ export default function Login() {
         </Link>
       </p>
     </main>
+    </div>
   );
 }

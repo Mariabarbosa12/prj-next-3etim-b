@@ -16,21 +16,22 @@
   padding: 40px 30px;
   border-radius: 15px;
   text-align: center;
-  width: 600px;
-  height: 490px;
+  width: 700px;
+  height: 580px;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
 .icon {
-  width: 110px;
+  width: 120px;
   margin-bottom: 5px;
-  margin-top: 25px;
+  margin-top: 14px;
 }
 
 .title {
-  font-size: 28px;
+  font-size: 30px;
   color: white;
   margin-bottom: 20px;
+
 }
 
 .input {
@@ -40,6 +41,7 @@
   border-radius: 8px;
   border: none;
   font-size: 17px;
+  margin-top: 10px;
 }
 
 .cadastroBtn {

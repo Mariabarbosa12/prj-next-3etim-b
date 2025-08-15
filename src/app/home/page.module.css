@@ -9,6 +9,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+   min-height: 100vh;
 }
 
 .header {
@@ -98,4 +99,8 @@
 
 .off {
   background-color: #dd5a4c !important;
+}
+.on {
+
+  background-color: #49af55 !important;
 }

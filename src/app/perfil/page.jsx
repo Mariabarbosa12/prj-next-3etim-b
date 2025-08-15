@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Perfil() {
   return (
-    <>
+    <div className={styles.body}>
       <header className={styles.header}>
         <button
           className={styles.backButton}
@@ -66,6 +66,6 @@ export default function Perfil() {
           </div>
         </section>
       </main>
-    </>
+    </div>
   );
 }
