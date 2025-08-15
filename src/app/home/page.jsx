@@ -13,7 +13,7 @@ export default function Home() {
   }
 
   return (
-    <>
+    <div className={styles.body}>
       <header className={styles.header}>
         <Image src="/logo.png" alt="Logo BLUVA" width={30} height={30} />
         <span>BLUVA</span>
@@ -63,6 +63,6 @@ export default function Home() {
           </button>
         </div>
       </main>
-    </>
+    </div>
   );
 }

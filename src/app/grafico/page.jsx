@@ -62,7 +62,7 @@ export default function grafico() {
   }, []);
 
   return (
-    <>
+    <div className={styles.body}>
       <div className={styles.header}>
         <button
           className={styles.backButton}
@@ -81,6 +81,6 @@ export default function grafico() {
           <canvas ref={chartRef} />
         </div>
       </div>
-    </>
+    </div>
   );
 }

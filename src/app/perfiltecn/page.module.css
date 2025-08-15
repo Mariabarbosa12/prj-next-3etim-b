@@ -1,6 +1,6 @@
 
 
-body {
+.body {
   font-family: "Lucida Sans", sans-serif;
   background-image: url('/fundinho.png');
   background-repeat: no-repeat;
@@ -52,7 +52,7 @@ body {
   margin-top: 70px; /* para o header fixo */
 }
 
-h2 {
+.h2 {
   margin-bottom: 20px;
   font-size: 22px;
   color: #000000;

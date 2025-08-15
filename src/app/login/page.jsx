@@ -25,15 +25,15 @@ export default function Login() {
 
       <button
         className={styles.loginBtn}
-        onClick={() => window.location.href = "/home/home"}
+        onClick={() => {}}
       >
         Entrar
       </button>
 
       <p>
         Não tem uma conta?{" "}
-        <Link href="/cadastro/cadastro">
-          <a className={styles.link}>Cadastre-se</a>
+        <Link href="/cadastro">
+          <label className={styles.link}>Cadastre-se</label>
         </Link>
       </p>
     </main>

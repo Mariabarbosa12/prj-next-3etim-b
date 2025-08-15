@@ -5,14 +5,14 @@ import Image from "next/image";
 
 export default function PerfilTecnico() {
   return (
-    <>
+    <div className={styles.body}>
       <header className={styles.header}>
         <Image src="/logo.png" alt="BLUVA logo" width={100} height={30} />
         <span>BLUVA</span>
       </header>
 
       <main className={styles.container}>
-        <h2>PERFIL DO TÉCNICO</h2>
+        <h2 className={styles.h2}>PERFIL DO TÉCNICO</h2>
 
         <section className={styles.cccontainer}>
           <div className={styles.infoSection}>
@@ -63,6 +63,6 @@ export default function PerfilTecnico() {
           </div>
         </section>
       </main>
-    </>
+    </div>
   );
 }

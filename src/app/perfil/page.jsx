@@ -9,7 +9,7 @@ export default function Perfil() {
       <header className={styles.header}>
         <button
           className={styles.backButton}
-          onClick={() => window.location.href = "/home/home"}
+          onClick={() => {}}
           aria-label="Voltar"
         >
           <Image src="/voltar.png" alt="Voltar" width={24} height={24} />

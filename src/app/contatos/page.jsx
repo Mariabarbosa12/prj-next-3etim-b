@@ -9,11 +9,11 @@ export default function Contatos() {
   const router = useRouter();
 
   return (
-    <>
+    <div className={styles.body}>
       <div className={styles.header}>
         <button
           className={styles.backButton}
-          onClick={() => router.push("/home/home")}
+          onClick={() => {}}
           aria-label="Voltar"
         >
           <Image
@@ -40,6 +40,6 @@ export default function Contatos() {
           </Link>
         </div>
       </div>
-    </>
+    </div>
   );
 }

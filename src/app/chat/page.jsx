@@ -1,3 +1,4 @@
+'use client';
 import { useState, useRef, useEffect } from "react";
 import styles from "./page.module.css";
 
@@ -29,7 +30,7 @@ export default function chat() {
       <div className={styles.header}>
         <button
           className={styles.backButton}
-          onClick={() => (window.location.href = "/home/home")}
+          onClick={() => {}}
           aria-label="Voltar"
         >
           <img src="/voltar.png" alt="Voltar" />

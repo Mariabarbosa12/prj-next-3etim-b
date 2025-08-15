@@ -1,3 +1,4 @@
+'use client';
 import styles from './page.module.css';
 
 export default function entrada() {
@@ -21,7 +22,7 @@ export default function entrada() {
 
         <button
           className={styles.button}
-          onClick={() => (window.location.href = '/login/login')}
+          onClick={() => {}}
         >
           Prosseguir
         </button>

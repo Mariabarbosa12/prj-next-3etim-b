@@ -1,3 +1,4 @@
+'use client';
 import styles from './page.module.css';
 
 export default function cadastro() {
@@ -38,7 +39,7 @@ export default function cadastro() {
 
         <button
           className={styles.cadastroBtn}
-          onClick={() => (window.location.href = '/home/home')}
+          onClick={() => {}}
         >
           Cadastre-se
         </button>
