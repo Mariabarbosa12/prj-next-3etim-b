@@ -64,17 +64,24 @@
 
 
 .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 55px;
-  padding: 12px;
-  font-size: 18px;
+  padding: 12px;  
   background-color: #5a5b65;
   color: white;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   transition: 0.3s;
-  margin-top: 20px;
+  margin-top: 20px; 
+  text-decoration: none;
+}
+
+.txtButton {
+  font-size: 18px;
 }
 
 .button:hover {

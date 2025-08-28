@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 import styles from './page.module.css';
 
 export default function entrada() {
@@ -20,12 +21,10 @@ export default function entrada() {
           <option value="tecnico">Técnico</option>
         </select>
 
-        <button
-          className={styles.button}
-          onClick={() => {}}
-        >
-          Prosseguir
-        </button>
+        <Link href={'/login'} className={styles.button}>
+          <label className={styles.txtButton}>Prosseguir</label>
+        </Link>
+
       </div>
     </div>
   );
