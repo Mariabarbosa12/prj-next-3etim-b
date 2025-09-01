@@ -1,15 +1,15 @@
 'use client';
 import styles from './page.module.css';
+import Image from "next/image";
+import Link from "next/link";
+
 
 export default function cadastro() {
   return (
     <div className={styles.body}>
       <div className={styles.cadastroContainer}>
-        <img
-          className={styles.icon}
-          src="/usu.png"
-          alt="Ícone de usuário"
-        />
+     <Image src="/usu.png" alt="Usuário" width={200} height={200} />
+    
         <h1 className={styles.title}>Cadastre-se</h1>
 
         <input
@@ -36,13 +36,9 @@ export default function cadastro() {
           id="confirmarSenha"
           className={styles.input}
         />
-
-        <button
-          className={styles.cadastroBtn}
-          onClick={() => {}}
-        >
-          Cadastre-se
-        </button>
+<Link href={'/home'} className={styles.cadastroBtn}>
+          <label >Cadastre-se</label>
+        </Link>
       </div>
     </div>
   );
