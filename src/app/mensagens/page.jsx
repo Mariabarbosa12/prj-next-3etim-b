@@ -11,10 +11,8 @@ export default function Contatos() {
   return (
     <div className={styles.body}>
       <div className={styles.header}>
-        <button
+        <Link href={'./perfiltecn'}
           className={styles.backButton}
-          onClick={() => {}}
-          aria-label="Voltar"
         >
           <Image
             src="/voltar.png"
@@ -23,9 +21,9 @@ export default function Contatos() {
             height={24}
             priority
           />
-        </button>
+        </Link>
 
-        <Image src="/logo.png" alt="Logo BLUVA" width={30} height={30} priority />
+        <Image src="/logoredonda.png" alt="Logo BLUVA" width={30} height={30} priority />
         <span>BLUVA</span>
       </div>
 
@@ -34,7 +32,7 @@ export default function Contatos() {
 
         <div className={styles.contato}>
           <Image src="/usu.png" alt="Ícone usuário" width={45} height={45} />
-          <Link href="/chat/chat" className={styles.apelido}>
+          <Link href="/chat" className={styles.apelido}>
             @Usuario123
           </Link>
           

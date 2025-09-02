@@ -2,6 +2,7 @@
 
 import styles from "./page.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function PerfilTecnico() {
   return (
@@ -20,13 +21,13 @@ export default function PerfilTecnico() {
               <Image
                 src="/usu.png"
                 alt="Foto de Perfil"
-                width={88}
-                height={88}
+                width={120}
+                height={120}
                 className={styles.profileImage}
               />
               <div>
                 <span>APELIDO:</span>
-                <input type="text" value="@Técnico123" disabled />
+                <input className={styles.perfilInput} type="text" value="@Técnico123" disabled />
               </div>
             </div>
 
@@ -57,9 +58,9 @@ export default function PerfilTecnico() {
             <button>EXCLUIR CONTA</button>
             <button>SAIR DA CONTA</button>
 
-            <a href="/contatos/contatos">
+            <Link href={'/mensagens'}>
               <button className={styles.greenButton}>IR PARA CONTATOS</button>
-            </a>
+            </Link>
           </div>
         </section>
       </main>

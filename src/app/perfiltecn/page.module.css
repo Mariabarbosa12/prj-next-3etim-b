@@ -15,7 +15,7 @@
 
 .header {
   width: 100%;
-  height: 60px;
+  height: 6%;
   background-color: white;
   display: flex;
   align-items: center;
@@ -30,32 +30,41 @@
   font-size: 34px;
 }
 
+.backButton {
+  position: absolute;
+  left: 15px;
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
 .header img {
-  height: 50px;
-  width: 50px;
+  height: 80px;
+  width: 80px;
   margin-right: 10px;
 }
 
 .header span {
   color: #0C1792;
-  font-size: 34px;
+  font-size: 40px;
   font-weight: bold;
 }
 
 .container {
   background-color: rgba(255, 255, 255, 0.78);
-  width: 90%;
-  max-width: 840px;
+  width: 50%;
+  height:820px;
   padding: 30px;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
-  margin-top: 70px; 
+  margin-top: 70px; /* espaço para header fixo */
 }
 
-.h2 {
+.h2{
   margin-bottom: 20px;
-  font-size: 22px;
+  font-size: 36px;
   color: #000000;
   text-align: center;
 }
@@ -63,6 +72,7 @@
 .cccontainer {
   background-color: #b3d7ff;
   padding: 20px;
+  height:700px;
   border-radius: 15px;
   display: flex;
   justify-content: space-between;
@@ -86,35 +96,52 @@
   align-items: center;
   justify-content: flex-start;
   margin-bottom: 20px;
+
 }
 
 .profileImage {
-  border-radius: 50%;
-  margin-right: 20px;
+  border-radius: 10%;
+  margin-right: 38px;
 }
 
 .perfilInfo div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 15%;
+ 
+  
+}
+
+.perfilInput {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 145%;
+ height: 34px;
+   font-size: 25px;
+   margin-top: 10px;
 }
 
 .perfilInfo span {
   font-weight: bold;
-  margin-bottom: 5px;
+  font-size: 35px;
+  margin-bottom: 16px;
 }
 
 .inputInfo {
   margin-bottom: 15px;
   display: flex;
   flex-direction: column;
+  
 }
 
 .inputInfo label {
   margin-bottom: 10px;
-  font-size: 14px;
+  font-size: 26px;
   font-weight: normal;
   color: #000;
+  margin-top: 10px;
 }
 
 .inputInfo span {
@@ -127,33 +154,33 @@
   padding: 10px;
   border-radius: 10px;
   border: 1px solid #ccc;
-  font-size: 14px;
-  width: 100%;
+  font-size: 22px;
+  width: 80%;
   background-color: #eee;
+  margin-bottom: 8px;
 }
 
 .buttonSection button {
   background-color: #ffffff;
   border: none;
   padding: 10px;
-  margin-bottom: 10px;
-  width: 100%;
+  margin-bottom: 20px;
+  width: 90%;
+  height: 60px;
   border-radius: 10px;
   cursor: pointer;
   font-weight: bold;
   transition: 0.3s;
-  margin-top: 15px;
+  margin-top: 30px;
+  font-size: 20px;
 }
 
 .buttonSection button:hover {
-  background-color: #80b19d;
+  background-color: #487764;
 }
 
 .greenButton {
   background-color: #4CAF50;
-  color: white;
+  color: rgb(31, 28, 28);
 }
 
-.greenButton:hover {
-  background-color: #45a049;
-}
