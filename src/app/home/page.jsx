@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <div className={styles.body}>
       <header className={styles.header}>
-        <Image src="/logo.png" alt="Logo BLUVA" width={50} height={50} />
+        <Image src="/logo.png" alt="Logo BLUVA" width={80} height={80} />
         <span>BLUVA</span>
       </header>
 
@@ -23,31 +23,31 @@ export default function Home() {
         <div className={styles.sensorCards}>
           <div className={styles.card}>
             <h3>UMIDADE</h3>
-            <Image src="/umidade.png" alt="Umidade" width={65} height={65} />
+            <Image src="/umidade.png" alt="Umidade" width={105} height={95} />
             <p>100%</p>
           </div>
 
           <div className={styles.card}>
             <h3>TEMPERATURA</h3>
-            <Image src="/temperatura.png" alt="Temperatura" width={65} height={65} />
+            <Image src="/temperatura.png" alt="Temperatura" width={85} height={85} />
             <p>100%</p>
           </div>
         </div>
 
         <div className={styles.buttonRow}>
-          <Link href="/grafico/grafico">
+          <Link href="/grafico">
             <button className={styles.iconButton}>
-              <Image src="/gota.png" alt="Gráfico" width={40} height={40} />
+              <Image src="/gota.png" alt="Gráfico" width={90} height={90} />
             </button>
           </Link>
 
-          <Link href="/perfil/perfil">
+          <Link href="/perfil">
             <button className={styles.iconButton}>
-              <Image src="/user.png" alt="Perfil" width={40} height={40} />
+              <Image src="/user.png" alt="Perfil" width={90} height={95} />
             </button>
           </Link>
 
-          <Link href="/chat/chat">
+          <Link href="/chat">
             <button className={styles.iconButton}>
               <Image src="/ajuda.png" alt="Ajuda" width={40} height={40} />
             </button>

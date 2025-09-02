@@ -2,24 +2,23 @@
 
 import styles from "./page.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Perfil() {
   return (
     <div className={styles.body}>
       <header className={styles.header}>
-        <button
+        <Link  href={'/home'}
           className={styles.backButton}
-          onClick={() => {}}
-          aria-label="Voltar"
         >
-          <Image src="/voltar.png" alt="Voltar" width={24} height={24} />
-        </button>
+          <Image src="/voltar.png" alt="Voltar" width={30} height={24} priority />
+        </Link>
         <Image src="/logo.png" alt="BLUVA logo" width={100} height={30} />
         <span>BLUVA</span>
       </header>
 
       <main className={styles.container}>
-        <h2>PERFIL DO USUÁRIO</h2>
+        <h2 className={styles.sm}>PERFIL DO USUÁRIO</h2>
 
         <section className={styles.cccontainer}>
           <div className={styles.infoSection}>
@@ -27,13 +26,13 @@ export default function Perfil() {
               <Image
                 src="/usu.png"
                 alt="Foto de Perfil"
-                width={88}
-                height={88}
+                width={160}
+                height={160}
                 className={styles.profileImage}
               />
-              <div>
+              <div >
                 <span>APELIDO:</span>
-                <input type="text" value="@Usuário123" disabled />
+                <input className={styles.perfilInput} type="text" value="@Usuário123" disabled />
               </div>
             </div>
 

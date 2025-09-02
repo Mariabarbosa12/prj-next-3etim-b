@@ -1,6 +1,8 @@
 'use client';
 import { useState, useRef, useEffect } from "react";
 import styles from "./page.module.css";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function chat() {
   const [mensagens, setMensagens] = useState([
@@ -27,13 +29,11 @@ export default function chat() {
   return (
     <div className={styles.body}>
       <div className={styles.header}>
-        <button
+         <Link  href={'/home'}
           className={styles.backButton}
-          onClick={() => {}}
-          aria-label="Voltar"
         >
-          <img src="/voltar.png" alt="Voltar" />
-        </button>
+          <Image src="/voltar.png" alt="Voltar" width={60} height={24} priority />
+        </Link>
         <img src="/logo.png" alt="Logo BLUVA" />
         <span>BLUVA</span>
       </div>

@@ -37,7 +37,7 @@ export default function cadastro() {
           className={styles.input}
         />
 <Link href={'/home'} className={styles.cadastroBtn}>
-          <label >Cadastre-se</label>
+          <label >Cadastrar</label>
         </Link>
       </div>
     </div>

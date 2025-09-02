@@ -42,7 +42,7 @@
 }
 
 .loginBtn {
-  width: 80%;
+  width: 55%;
   height: 10%;
   padding: 12px;
   font-size: 30px;
@@ -55,6 +55,8 @@
   display: block;
   margin: 20px auto 30px auto;
   transition: background-color 0.3s;
+  text-decoration: none;
+  align-items: center;
 }
 
 .loginBtn:hover {

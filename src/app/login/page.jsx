@@ -24,12 +24,9 @@ export default function Login() {
         className={styles.input}
       />
 
-      <button
-        className={styles.loginBtn}
-        onClick={() => {}}
-      >
-        Entrar
-      </button>
+      <Link href={'/home'} className={styles.loginBtn}>
+          <label >Entrar</label>
+        </Link>
 
       <p>
         Não tem uma conta?{" "}

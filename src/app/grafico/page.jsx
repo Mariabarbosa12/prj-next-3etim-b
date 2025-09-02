@@ -5,6 +5,7 @@ import { Chart, BarController, BarElement, CategoryScale, LinearScale } from "ch
 import styles from "./page.module.css";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 Chart.register(BarController, BarElement, CategoryScale, LinearScale);
 
@@ -42,6 +43,18 @@ export default function grafico() {
             max: 500,
             ticks: {
               stepSize: 100,
+              font: {
+                size: 22, // tamanho dos números do eixo Y
+                weight: "bold",
+              },
+            },
+          },
+          x: {
+            ticks: {
+              font: {
+                size: 22, // tamanho dos dias da semana
+                weight: "bold",
+              },
             },
           },
         },
@@ -63,14 +76,12 @@ export default function grafico() {
   return (
     <div className={styles.body}>
       <div className={styles.header}>
-        <button
+        <Link  href={'/home'}
           className={styles.backButton}
-          onClick={() => router.push("/home/home")}
-          aria-label="Voltar"
         >
-          <Image src="/voltar.png" alt="Voltar" width={24} height={24} priority />
-        </button>
-        <Image src="/logo.png" alt="Logo BLUVA" width={30} height={30} priority />
+          <Image src="/voltar.png" alt="Voltar" width={30} height={24} priority />
+        </Link>
+        <Image src="/logo.png" alt="Logo BLUVA" width={80} height={80} priority />
         <span>BLUVA</span>
       </div>
 
