@@ -14,4 +14,4 @@ const mensagens = [
     { "id_mens": 12, "id_remetente": 1, "id_destinatario": 2, "data_hora": null, "texto": "Olá, como está a sua irrigação?" }, 
     { "id_mens": 13, "id_remetente": 1, "id_destinatario": 2, "data_hora": null, "texto": "Olá, como está a sua irrigação?" }, 
     { "id_mens": 14, "id_remetente": 1, "id_destinatario": 2, "data_hora": null, "texto": "Olá, como está a sua irrigação?" }
-]
+];
