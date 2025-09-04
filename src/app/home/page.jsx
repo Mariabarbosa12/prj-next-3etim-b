@@ -54,12 +54,12 @@ export default function Home() {
           </Link>
 
           <button
-            className={`${styles.iconButton} ${isOn ? "" : styles.off}`}
+            className={`${styles.iconButtonG} ${isOn ? "" : styles.off}`}
             onClick={togglePower}
             aria-pressed={isOn}
             aria-label="Botão ligar/desligar"
           >
-            <Image src="/liga.png" alt="Power" width={40} height={40} />
+            <Image src="/liga.png" alt="Power" width={90} height={90} />
           </button>
         </div>
       </main>

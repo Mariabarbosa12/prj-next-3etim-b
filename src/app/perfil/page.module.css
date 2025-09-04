@@ -59,7 +59,7 @@
   border-radius: 15px;
   display: flex;
   flex-direction: column;
-  margin-top: 70px; /* espaço para header fixo */
+  margin-top: 70px; 
 }
 
 .sm {
