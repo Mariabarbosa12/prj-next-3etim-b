@@ -62,19 +62,19 @@
   margin-bottom: 20px;
 }
 
-.contato {
+/* .contato {
   display: flex;
   align-items: center;
   width: 100%;
   border-bottom: 1px solid #aaa;
   padding: 10px 0;
-}
+} */
 
-.contato img {
+/* .contato img {
   width: 80px;
   height: 80px;
   margin-right: 15px;
-}
+} */
 
 .apelido {
   font-size: 30px;

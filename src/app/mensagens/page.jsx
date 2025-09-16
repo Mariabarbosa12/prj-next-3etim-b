@@ -27,17 +27,17 @@ export default function Contatos() {
         <span>BLUVA</span>
       </div>
 
-      <div className={styles.container}>
+       <div className={styles.container}>
         <div className={styles.titulo}>CONTATOS</div>
 
-        <div className={styles.contato}>
+        {/* <div className={styles.contato}>
           <Image src="/usu.png" alt="Ícone usuário" width={45} height={45} />
           <Link href="/chat" className={styles.apelido}>
             @Usuario123
           </Link>
           
-        </div>
+        </div> */}
       </div>
-    </div>
+    </div> 
   );
 }
