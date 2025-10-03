@@ -15,11 +15,9 @@ export default function entrada() {
           <h1 className={styles.titulo}>BLUVA</h1>
         </div>
 
-        <select id="tipoUsuario" className={styles.select}>
-          <option value="">Selecione</option>
-          <option value="usuario">Usuário</option>
-          <option value="tecnico">Técnico</option>
-        </select>
+        <p className={styles.p}>
+       SEJA BEM-VINDO!
+      </p>
 
         <Link href={'/login'} className={styles.button}>
           <label className={styles.txtButton}>Prosseguir</label>

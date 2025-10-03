@@ -30,14 +30,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 
 
 .imgl {
   height: 200px;
   margin-right: 15px;
-   margin-top: 50px;
+   margin-top: 70px;
 }
 
 
@@ -45,22 +45,26 @@
   font-family: 'Poppins', sans-serif;
   font-size: 56px;
   color: black;
-  margin-top: 68px;
-  margin-bottom: 30px;
+  margin-top:85px;
+  margin-bottom: 40px;
+  font-weight: bold;
 }
 
 
-.select {
+.p {
   width: 90%;
+  font-family: 'Poppins', sans-serif;
   height: 100px;
   padding: 12px;
-  font-size: 38px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  margin-bottom: 20px;
-  background-color: #fff;
+  font-size: 45px;
+  margin-bottom: 10px;
   opacity: 100%;
-  margin-top: 100px;
+  margin-top: 5px;
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  color: #37383d;
 }
 
 
@@ -77,8 +81,9 @@
   border-radius: 8px;
   cursor: pointer;
   transition: 0.3s;
-  margin-top: 20px; 
+  margin-top: 80px; 
   text-decoration: none;
+  font-family: 'Poppins', sans-serif;
 }
 
 .txtButton {

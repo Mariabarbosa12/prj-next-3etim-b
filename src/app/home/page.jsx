@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState } from "react";
@@ -8,8 +9,23 @@ import Link from "next/link";
 export default function Home() {
   const [isOn, setIsOn] = useState(true);
 
+  // Dados simulados (substitua pelo que vem do banco)
+  const locais = [
+    { id: 1, nome: "Estufa 1", umidade: "85%", temperatura: "24°C" },
+    { id: 2, nome: "Estufa 2", umidade: "70%", temperatura: "22°C" },
+    { id: 3, nome: "Laboratório", umidade: "60%", temperatura: "20°C" },
+  ];
+
+  const [localSelecionado, setLocalSelecionado] = useState(locais[0]);
+
   function togglePower() {
     setIsOn((prev) => !prev);
+  }
+
+  function handleChangeLocal(e) {
+    const id = parseInt(e.target.value);
+    const local = locais.find((l) => l.id === id);
+    setLocalSelecionado(local);
   }
 
   return (
@@ -20,17 +36,29 @@ export default function Home() {
       </header>
 
       <main className={styles.container}>
+        {/* Select de locais */}
+        <div className={styles.localSelect}>
+          <select onChange={handleChangeLocal} value={localSelecionado.id}>
+            {locais.map((local) => (
+              <option key={local.id} value={local.id}>
+                {local.nome}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        {/* Sensores alterados conforme o local */}
         <div className={styles.sensorCards}>
           <div className={styles.card}>
             <h3>UMIDADE</h3>
             <Image src="/umidade.png" alt="Umidade" width={105} height={95} />
-            <p>100%</p>
+            <p>{localSelecionado.umidade}</p>
           </div>
 
           <div className={styles.card}>
             <h3>TEMPERATURA</h3>
             <Image src="/temperatura.png" alt="Temperatura" width={85} height={85} />
-            <p>100%</p>
+            <p>{localSelecionado.temperatura}</p>
           </div>
         </div>
 

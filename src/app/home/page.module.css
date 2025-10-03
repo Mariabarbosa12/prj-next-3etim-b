@@ -71,6 +71,15 @@
   margin-top: 25px;
 }
 
+.localSelect select {
+font-size: 26px;
+margin-right: 840px;
+background-color: #cfe8ff;
+color: #1d236d;
+border-radius: 10px;
+}
+
+
 .buttonRow {
   display: flex;
   justify-content: space-around;
