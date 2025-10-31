@@ -42,7 +42,7 @@
 }
 
 .sensorCards {
-  margin-top: 5px;
+  margin-top: 10px;
   display: flex;
   justify-content: space-between;
   width: 80%;
@@ -59,7 +59,7 @@
   margin-top: 30px;
   color: #0c1792;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 33px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -67,7 +67,7 @@
 }
 
 .card p {
-  font-size: 30px;
+  font-size: 33px;
   margin-top: 25px;
 }
 
