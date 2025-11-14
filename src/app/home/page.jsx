@@ -31,7 +31,7 @@ export default function Home() {
   return (
     <div className={styles.body}>
       <header className={styles.header}>
-        <Image src="/logo.png" alt="Logo BLUVA" width={80} height={80} />
+        <Image src="/logo.png" alt="Logo BLUVA" width={180} height={180} />
         <span>BLUVA</span>
       </header>
 

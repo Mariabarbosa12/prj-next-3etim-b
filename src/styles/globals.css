@@ -1,16 +1,8 @@
-html{
-    font-size: 62.5%;
-    max-width: 100vw;
-}
-
-body{
-    font-size: 1.6rem;
-    min-width: 32rem;
-    min-height: 100vh;
-    max-width: 180rem;
-    width: 100%;
-    padding: 1rem;
-    margin: 0 auto;
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 *{

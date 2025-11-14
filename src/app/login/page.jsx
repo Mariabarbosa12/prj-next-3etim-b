@@ -8,7 +8,7 @@ export default function Login() {
   return (
     <div className={styles.body}>
     <main className={styles.loginContainer}>
-      <Image src="/usu.png" alt="Usuário" width={210} height={210} />
+      <Image src="/usu.png" alt="Usuário" width={480} height={480} />
       <h1>Login</h1>
 
       <input

@@ -12,52 +12,55 @@
 
 .loginContainer {
   background-color: rgba(173, 216, 230, 0.9);
-  padding: 40px 30px;
-  border-radius: 15px;
-  text-align: center;
-  width: 950px;
-  height: 900px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  width: 40%;
+  min-width: 100px;
+  min-height: 70vh;  
+  height: auto;
+  padding: 40px;
+  border-radius: 50px;
+  margin: 150px auto;
+  margin-top: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .loginContainer h1 {
-  font-size: 55px;
+  font-size: 280px;
   color: white;
   margin-bottom: 45px;
   margin-top: 20px;
 }
 
 .input {
-  width: 100%;
+  width: 90%;
   height: 10%;
-  padding: 12px;
-  margin-bottom: 20px;
-  border-radius: 8px;
+  padding: 70px;
+  margin-bottom: 90px;
+  border-radius:30px;
   border: none;
-  font-size: 30px;
-  margin-top: 20px;
+  font-size: 110px;
+  margin-top: 120px;
 }
 
 .loginBtn {
-  width: 55%;
+  width: 40%;
   height: 10%;
-  padding: 12px;
-  font-size: 30px;
+  padding: 50px;
+  font-size: 110px;
   background-color: white;
   color: #333;
   border: none;
-  border-radius: 8px;
+  border-radius: 30px;
   cursor: pointer;
   font-weight: bold;
-  display: block;
-  margin: 20px auto 30px auto;
-  transition: background-color 0.3s;
-  text-decoration: none;
+  display: flex;
   justify-content: center;
   align-items: center;
+  margin: 70px auto 90px auto;
+  transition: background-color 0.3s;
+  text-decoration: none;
+
 }
 
 .loginBtn:hover {
@@ -66,7 +69,7 @@
 
 .loginContainer p {
   margin-top: 15px;
-  font-size: 30px;
+  font-size: 100px;
   color: white;
 }
 
