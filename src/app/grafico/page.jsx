@@ -31,7 +31,7 @@ export default function grafico() {
             data: [300, 250, 400, 350, 200, 150, 100],
             backgroundColor: "#353967",
             borderColor: "#2f65d1",
-            borderWidth: 1,
+          
           },
         ],
       },
@@ -44,7 +44,7 @@ export default function grafico() {
             ticks: {
               stepSize: 100,
               font: {
-                size: 22, // tamanho dos números do eixo Y
+                size: 80, // tamanho dos números do eixo Y
                 weight: "bold",
               },
             },
@@ -52,7 +52,7 @@ export default function grafico() {
           x: {
             ticks: {
               font: {
-                size: 22, // tamanho dos dias da semana
+                size: 80, // tamanho dos dias da semana
                 weight: "bold",
               },
             },
@@ -79,9 +79,9 @@ export default function grafico() {
         <Link  href={'/home'}
           className={styles.backButton}
         >
-          <Image src="/voltar.png" alt="Voltar" width={30} height={24} priority />
+          <Image src="/voltar.png" alt="Voltar" width={130} height={124} priority />
         </Link>
-        <Image src="/logo.png" alt="Logo BLUVA" width={80} height={80} priority />
+        <Image src="/logo.png" alt="Logo BLUVA" width={180} height={180} priority />
         <span>BLUVA</span>
       </div>
 

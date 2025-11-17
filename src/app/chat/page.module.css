@@ -26,18 +26,17 @@
   left: 15px;
   background: none;
   border: none;
-  font-size: 30px;
   cursor: pointer;
 }
 
 .header img {
-  height: 80px;
+  height: 180px;
   margin-right: 10px;
 }
 
 .header span {
   color: #0c1792;
-  font-size: 40px;
+  font-size: 100px;
   font-weight: bold;
   display: flex;
   align-items: center;

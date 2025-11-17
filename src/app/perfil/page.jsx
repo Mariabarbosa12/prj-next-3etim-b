@@ -11,9 +11,9 @@ export default function Perfil() {
         <Link  href={'/home'}
           className={styles.backButton}
         >
-          <Image src="/voltar.png" alt="Voltar" width={30} height={24} priority />
+          <Image src="/voltar.png" alt="Voltar" width={130} height={124} priority />
         </Link>
-        <Image src="/logo.png" alt="BLUVA logo" width={100} height={30} />
+        <Image src="/logo.png" alt="BLUVA logo" width={180} height={180} />
         <span>BLUVA</span>
       </header>
 
@@ -26,8 +26,8 @@ export default function Perfil() {
               <Image
                 src="/usu.png"
                 alt="Foto de Perfil"
-                width={160}
-                height={160}
+                width={360}
+                height={360}
                 className={styles.profileImage}
               />
               <div >

@@ -51,13 +51,13 @@ export default function Home() {
         <div className={styles.sensorCards}>
           <div className={styles.card}>
             <h3>UMIDADE</h3>
-            <Image src="/umidade.png" alt="Umidade" width={105} height={95} />
+            <Image src="/umidade.png" alt="Umidade" width={178} height={175} />
             <p>{localSelecionado.umidade}</p>
           </div>
 
           <div className={styles.card}>
             <h3>TEMPERATURA</h3>
-            <Image src="/temperatura.png" alt="Temperatura" width={85} height={85} />
+            <Image src="/temperatura.png" alt="Temperatura" width={175} height={178} />
             <p>{localSelecionado.temperatura}</p>
           </div>
         </div>
@@ -87,7 +87,7 @@ export default function Home() {
             aria-pressed={isOn}
             aria-label="Botão ligar/desligar"
           >
-            <Image src="/liga.png" alt="Power" width={200} height={200} />
+            <Image src="/liga.png" alt="Power" width={220} height={220} />
           </button>
         </div>
       </main>

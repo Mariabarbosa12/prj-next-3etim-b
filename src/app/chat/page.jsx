@@ -32,7 +32,7 @@ export default function chat() {
          <Link  href={'/home'}
           className={styles.backButton}
         >
-          <Image src="/voltar.png" alt="Voltar" width={60} height={24} priority />
+          <Image src="/voltar.png" alt="Voltar" width={130} height={114} priority />
         </Link>
         <img src="/logo.png" alt="Logo BLUVA" />
         <span>BLUVA</span>
