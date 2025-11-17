@@ -65,19 +65,19 @@ export default function Home() {
         <div className={styles.buttonRow}>
           <Link href="/grafico">
             <button className={styles.iconButton}>
-              <Image src="/gota.png" alt="Gráfico" width={90} height={90} />
+              <Image src="/gota.png" alt="Gráfico" width={200} height={220} />
             </button>
           </Link>
 
           <Link href="/perfil">
             <button className={styles.iconButton}>
-              <Image src="/user.png" alt="Perfil" width={90} height={95} />
+              <Image src="/user.png" alt="Perfil" width={200} height={200} />
             </button>
           </Link>
 
           <Link href="/chat">
             <button className={styles.iconButton}>
-              <Image src="/ajuda.png" alt="Ajuda" width={40} height={40} />
+              <Image src="/ajuda.png" alt="Ajuda" width={200} height={200} />
             </button>
           </Link>
 
@@ -87,7 +87,7 @@ export default function Home() {
             aria-pressed={isOn}
             aria-label="Botão ligar/desligar"
           >
-            <Image src="/liga.png" alt="Power" width={90} height={90} />
+            <Image src="/liga.png" alt="Power" width={200} height={200} />
           </button>
         </div>
       </main>
