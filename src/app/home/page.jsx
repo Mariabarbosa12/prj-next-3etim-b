@@ -91,6 +91,10 @@ export default function Home() {
           </button>
         </div>
       </main>
+
+      <footer className={styles.footer}>
+        <span>Termos de uso</span>
+      </footer>
     </div>
   );
 }

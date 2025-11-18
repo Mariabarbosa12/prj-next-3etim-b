@@ -10,6 +10,7 @@
   flex-direction: column;
   align-items: center;
    min-height: 100vh;
+   
 }
 
 .header {
@@ -27,7 +28,22 @@
   font-size: 100px;
   font-weight: bold;
 }
+.footer {
+  width: 100%;
+   background-color: rgba(255, 255, 255, 0.50);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid #ccc;
+  gap: 10px;
+  margin-top: auto;
+}
 
+.footer span {
+  color: #0c1792;
+  font-size: 60px;
+  font-weight: bold;
+} 
 .container {
   background-color: rgba(255, 255, 255, 0.78);
   width: 45%;
@@ -78,6 +94,8 @@ margin-right: 2100px;
 background-color: #cfe8ff;
 color: #1d236d;
 border-radius: 30px;
+margin-top: 70px;
+margin-bottom: 120px;
 }
 
 

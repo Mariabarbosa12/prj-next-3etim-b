@@ -5,26 +5,26 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function chat() {
-  const [mensagens, setMensagens] = useState([
-    { texto: "Ola", lado: "direita" },
-    { texto: "OI", lado: "esquerda" },
-  ]);
-  const [input, setInput] = useState("");
-  const mensagensRef = useRef(null);
+  // const [mensagens, setMensagens] = useState([
+  //   { texto: "Ola", lado: "direita" },
+  //   { texto: "OI", lado: "esquerda" },
+  // ]);
+  // const [input, setInput] = useState("");
+  // const mensagensRef = useRef(null);
 
-  function enviarMensagem() {
-    const texto = input.trim();
-    if (!texto) return;
+  // function enviarMensagem() {
+  //   const texto = input.trim();
+  //   if (!texto) return;
 
-    setMensagens((msgs) => [...msgs, { texto, lado: "direita" }]);
-    setInput("");
-  }
+  //   setMensagens((msgs) => [...msgs, { texto, lado: "direita" }]);
+  //   setInput("");
+  // }
 
-  useEffect(() => {
-    if (mensagensRef.current) {
-      mensagensRef.current.scrollTop = mensagensRef.current.scrollHeight;
-    }
-  }, [mensagens]);
+  // useEffect(() => {
+  //   if (mensagensRef.current) {
+  //     mensagensRef.current.scrollTop = mensagensRef.current.scrollHeight;
+  //   }
+  // }, [mensagens]);
 
   return (
     <div className={styles.body}>
@@ -32,14 +32,14 @@ export default function chat() {
          <Link  href={'/home'}
           className={styles.backButton}
         >
-          <Image src="/voltar.png" alt="Voltar" width={130} height={114} priority />
+          <Image src="/voltar.png" alt="Voltar" width={135} height={114} priority />
         </Link>
         <img src="/logo.png" alt="Logo BLUVA" />
         <span>BLUVA</span>
       </div>
 
       <div className={styles.contatoChat}>
-        <div className={styles.cabecalhoChat}>Nome Sobrenome</div>
+        {/* <div className={styles.cabecalhoChat}>Nome Sobrenome</div>
 
         <div className={styles.mensagensChat} id="mensagens" ref={mensagensRef}>
           {mensagens.map((msg, i) => (
@@ -70,7 +70,7 @@ export default function chat() {
           <button onClick={enviarMensagem} aria-label="Enviar mensagem">
             <img src="/enviar.png" alt="Enviar" />
           </button>
-        </div>
+        </div> */}
       </div>
     </div>
   );
