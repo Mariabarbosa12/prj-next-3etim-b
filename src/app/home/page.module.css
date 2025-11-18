@@ -28,22 +28,7 @@
   font-size: 100px;
   font-weight: bold;
 }
-.footer {
-  width: 100%;
-   background-color: rgba(255, 255, 255, 0.50);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-bottom: 2px solid #ccc;
-  gap: 10px;
-  margin-top: auto;
-}
 
-.footer span {
-  color: #0c1792;
-  font-size: 60px;
-  font-weight: bold;
-} 
 .container {
   background-color: rgba(255, 255, 255, 0.78);
   width: 45%;

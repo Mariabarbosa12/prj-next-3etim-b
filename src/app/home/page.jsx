@@ -63,9 +63,9 @@ export default function Home() {
         </div>
 
         <div className={styles.buttonRow}>
-          <Link href="/grafico">
+          <Link href="/termos">
             <button className={styles.iconButton}>
-              <Image src="/gota.png" alt="Gráfico" width={200} height={220} />
+              <Image src="/engre.png" alt="Termos" width={220} height={220} />
             </button>
           </Link>
 
@@ -92,9 +92,6 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className={styles.footer}>
-        <span>Termos de uso</span>
-      </footer>
     </div>
   );
 }

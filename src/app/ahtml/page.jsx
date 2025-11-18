@@ -9,7 +9,7 @@ import Link from "next/link";
 
 Chart.register(BarController, BarElement, CategoryScale, LinearScale);
 
-export default function grafico() {
+export default function termos() {
   const router = useRouter();
   const chartRef = useRef(null);
   let chartInstance = null;
