@@ -128,3 +128,12 @@ margin-bottom: 120px;
 
   background-color: #49af55 !important;
 }
+
+.texto {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
