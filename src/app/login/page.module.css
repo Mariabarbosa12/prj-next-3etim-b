@@ -31,11 +31,17 @@
   margin-bottom: 45px;
   margin-top: 20px;
 }
+ 
+.img {
+ 
+  margin-top: 120px;
+
+}
 
 .input {
   width: 90%;
-  height: 10%;
-  padding: 70px;
+  
+  padding: 60px;
   margin-bottom: 90px;
   border-radius:30px;
   border: none;
@@ -45,7 +51,7 @@
 
 .loginBtn {
   width: 40%;
-  height: 10%;
+  
   padding: 50px;
   font-size: 110px;
   background-color: white;
@@ -57,7 +63,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 70px auto 90px auto;
+  margin: 100px auto 90px auto;
   transition: background-color 0.3s;
   text-decoration: none;
 

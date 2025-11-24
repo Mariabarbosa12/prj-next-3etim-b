@@ -18,7 +18,7 @@
   text-align: center;
    width: 40%;
   min-width: 100px;
-  min-height: 70vh;  
+  min-height: 75vh;  
   height: auto;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
     display: flex;
@@ -42,19 +42,18 @@
 
 .input {
   width: 90%;
-
-  padding: 20px;
+  padding: 60px;
   margin-bottom: 15px;
   border-radius: 30px;
   border: none;
-  font-size:100px;
-  margin-top: 90px;
+  font-size:110px;
+  margin-top: 110px;
 }
 
 .cadastroBtn {
   align-items: center;
   width: 35%;
-  padding: 20px;
+  padding: 50px;
   font-size: 100px;
   background-color: white;
   color: #333;
@@ -63,7 +62,7 @@
   cursor: pointer;
   font-weight: bold;
   display: block;
-  margin: 120px auto 0 auto;
+  margin: 160px auto 0 auto;
   text-decoration: none;
 }
 
