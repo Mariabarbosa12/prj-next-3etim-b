@@ -50,14 +50,14 @@ export default function Home() {
         {/* Sensores alterados conforme o local */}
         <div className={styles.sensorCards}>
           <div className={styles.card}>
-            <h3>UMIDADE</h3>
-            <Image src="/umidade.png" alt="Umidade" width={178} height={175} />
+            <h3 className={styles.cardTxt}>UMIDADE</h3>
+            <Image src="/umidade.png" alt="Umidade" width={189} height={181} />
             <p>{localSelecionado.umidade}</p>
           </div>
 
           <div className={styles.card}>
-            <h3>TEMPERATURA</h3>
-            <Image src="/temperatura.png" alt="Temperatura" width={175} height={178} />
+            <h3 className={styles.cardTxt}>TEMPERATURA</h3>
+            <Image src="/temperatura.png" alt="Temperatura" width={181} height={184} />
             <p>{localSelecionado.temperatura}</p>
           </div>
         </div>
