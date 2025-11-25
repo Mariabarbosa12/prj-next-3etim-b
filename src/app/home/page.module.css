@@ -1,5 +1,5 @@
 
-
+/* Home page styles (top-level selectors) */
 .body {
   font-family: "Lucida Sans", sans-serif;
   background-image: url('/fundinho.png');
@@ -9,8 +9,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-   min-height: 100vh;
-   
+  min-height: 100vh;
 }
 
 .header {
@@ -20,60 +19,64 @@
   align-items: center;
   justify-content: center;
   border-bottom: 2px solid #ccc;
-  gap: 10px;
+  gap: 0.5rem;
 }
 
 .header span {
   color: #0c1792;
-  font-size: 100px;
-  font-weight: bold;
+  /* Reduced max to avoid extremely large headings on wide screens */
+  font-size: clamp(1.4rem, 4vw, 2.8rem);
+  font-weight: 700;
 }
 
 .container {
   background-color: rgba(255, 255, 255, 0.78);
-  width: 45%;
-  min-width: 100px;
-  min-height: 65vh;  
-  height: auto;
-  padding: 20px;
-  border-radius: 50px;
-  margin-top: 355px;
+  width: 90%;
+  max-width: 900px;
+  min-width: 10rem;
+  min-height: 65vh;
+  padding: clamp(0.75rem, 2.5vw, 2rem);
+  border-radius: clamp(0.75rem, 4vw, 3rem);
+  /* Prevent huge vertical offset on large screens */
+  margin-top: clamp(1.5rem, 8vh, 5rem);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .sensorCards {
- padding: 80px;
+  padding: clamp(0.75rem, 3vw, 1.75rem);
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  width: 100%;
   margin-bottom: 10%;
+  gap: 1rem;
 }
 
 .card {
   background-color: #cfe8ff;
-  border-radius: 50px;
-  width: 40%;
-  padding: 100px;
+  border-radius: clamp(0.75rem, 4vw, 2rem);
+  flex: 1 1 40%;
+  padding: clamp(0.75rem, 4vw, 1.5rem);
   text-align: center;
-  margin-top: 30px;
+  margin-top: 1.25rem;
   color: #0c1792;
-  font-weight: bold;
+  font-weight: 700;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+
 .cardTxt{
-font-size: 95px;
-margin-bottom: 90px;
+  font-size: clamp(1.1rem, 3.2vw, 2.2rem);
+  margin-bottom: 2rem;
 }
 
 .card p {
-  font-size: 100px;
-  margin-top: 120px;
-  margin-bottom: 80px;
+  font-size: clamp(1rem, 3.2vw, 2rem);
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .localSelect {
@@ -83,15 +86,14 @@ margin-bottom: 90px;
 }
 
 .localSelect select {
-  font-size: 70px;
+  font-size: clamp(0.95rem, 2.8vw, 1.4rem);
   background-color: #cfe8ff;
   color: #1d236d;
-  border-radius: 30px;
-  margin-top: 70px;
-  margin-bottom: 120px;
-  margin-left: clamp(120px, 30vw, 390px);
+  border-radius: clamp(0.5rem, 3vw, 2rem);
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  margin-left: clamp(0.5rem, 8vw, 4rem);
 }
-
 
 .buttonRow {
   display: flex;
@@ -102,41 +104,35 @@ margin-bottom: 90px;
 .iconButton {
   background-color: #e0f0ff;
   border: none;
-  border-radius: 60px;
-  padding: 15px;
-  width:170%;
-  height: 50%;
+  border-radius: 1.5rem;
+  padding: 0.75rem;
+  width: auto;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   transition: background-color 0.3s;
-  margin-top: 400px;
+  margin-top: clamp(0.5rem, 6vh, 2.5rem);
 }
+
 .iconButtonG {
   background-color: #89c47d;
   border: none;
-  border-radius: 60px;
-  padding: 78px;
-  width: 11%;
-  height:  110%;
+  border-radius: 1.5rem;
+  padding: clamp(0.75rem, 4vw, 1.5rem);
+  width: auto;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   transition: background-color 0.3s;
-  margin-top: 420px;
+  margin-top: clamp(0.5rem, 6.5vh, 2.8rem);
 }
 
-
-
-.off {
-  background-color: #dd5a4c !important;
-}
-.on {
-
-  background-color: #49af55 !important;
-}
+.off { background-color: #dd5a4c !important; }
+.on { background-color: #49af55 !important; }
 
 .texto {
   width: 100%;
