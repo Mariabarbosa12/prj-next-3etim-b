@@ -33,7 +33,7 @@
   background-color: rgba(255, 255, 255, 0.78);
   width: 45%;
   min-width: 100px;
-  min-height: 69vh;  
+  min-height: 65vh;  
   height: auto;
   padding: 20px;
   border-radius: 50px;
@@ -71,7 +71,7 @@ margin-bottom: 90px;
 }
 
 .card p {
-  font-size: 110px;
+  font-size: 100px;
   margin-top: 120px;
   margin-bottom: 80px;
 }
