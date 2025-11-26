@@ -27,39 +27,39 @@
   left: 15px;
   background: none;
   border: none;
-  font-size: 30px;
+  font-size: clamp(0.95rem, 1.6vw, 1.1rem);
   cursor: pointer;
 }
 
 .header img {
-  height: 80px;
-  width: 80px;
-  margin-right: 10px;
+  height: clamp(2.5rem, 8vw, 4.5rem);
+  width: auto;
+  margin-right: 0.5rem;
 }
 
 .header span {
   color: #0c1792;
-  font-size: 40px;
-  font-weight: bold;
+  font-size: clamp(1.1rem, 2.6vw, 1.6rem);
+  font-weight: 700;
 }
 
 .container {
   background-color: rgba(255, 255, 255, 0.78);
-  width: 40%;
-  height: 450px;
-  padding: 30px;
-  border-radius: 20px;
-  margin-top: 40px;
+  width: min(720px, 90%);
+  height: auto;
+  padding: clamp(0.75rem, 2vw, 1rem);
+  border-radius: clamp(0.5rem, 2vw, 1rem);
+  margin-top: clamp(1rem, 4vh, 2.5rem);
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 800px;
+  margin-left: 0;
 }
 
 .titulo {
-  font-weight: bold;
-  font-size: 40px;
-  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: clamp(1.1rem, 2.6vw, 1.6rem);
+  margin-bottom: 0.75rem;
 }
 
 /* .contato {

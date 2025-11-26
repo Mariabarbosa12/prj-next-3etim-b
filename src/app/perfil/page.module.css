@@ -29,52 +29,51 @@
 
 .header span {
   color: #0c1792;
-  font-size: 100px;
-  font-weight: bold;
+  font-size: clamp(1.2rem, 3.5vw, 2rem);
+  font-weight: 700;
 }
 
 .backButton {
   position: absolute;
-  left: 15px;
+  left: 1rem;
   background: none;
   border: none;
-  font-size: 30px;
+  font-size: clamp(0.95rem, 1.6vw, 1.1rem);
   cursor: pointer;
 }
 
 
 .container {
   background-color: rgba(255, 255, 255, 0.78);
- width: 50%;
-  min-width: 100px;
-  min-height: 55vh;  
+  width: min(900px, 90%);
+  min-width: 18rem;
+  min-height: 55vh;
   height: auto;
-  padding: 30px;
-  border-radius: 50px;
+  padding: clamp(1rem, 2.5vw, 1.5rem);
+  border-radius: clamp(0.75rem, 3vw, 1.25rem);
   display: flex;
   flex-direction: column;
-  margin-top: 70px; 
+  margin-top: clamp(3rem, 8vh, 5rem);
 }
 
 .sm {
-  margin-bottom: 80px;
-  font-size: 120px;
+  margin-bottom: 1.5rem;
+  font-size: clamp(1.1rem, 2.8vw, 1.6rem);
   color: #000000;
   text-align: center;
 }
 
 .cccontainer {
   background-color: #b3d7ff;
-  padding: 20px;
+  padding: clamp(0.75rem, 2vw, 1rem);
   width: 100%;
-  min-width: 100px;
-  min-height: 40vh;  
+  min-height: 40vh;
   height: auto;
-  border-radius: 50px;
+  border-radius: clamp(0.75rem, 3vw, 1rem);
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 80px;  
+  gap: clamp(0.75rem, 3vw, 2rem);
 }
 
 .infoSection {
@@ -85,58 +84,55 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin-bottom: 20px;
-  margin-left: 60px;
+  margin-bottom: 1rem;
+  margin-left: clamp(0.5rem, 3vw, 2rem);
 
 }
 
 .inputInfo {
-  margin-bottom: 200px;
+  margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
-  margin-left: 60px;
-  
+  margin-left: clamp(0.5rem, 3vw, 2rem);
 }
 
 .profileImage {
   border-radius: 10%;
-  margin-right: 128px;
-  margin-bottom: 90px;
-  margin-top: 90px;
+  margin-right: clamp(0.5rem, 6vw, 3rem);
+  margin-bottom: 1.25rem;
+  margin-top: 1.25rem;
 }
 
 .perfilInfo div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 15%;
- 
-  
+  width: 100%;
 }
 
 .perfilInput {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 170%;
-  font-size: 70px;
-  margin-top: 20px;
-  border-radius: 30px;
+  width: 100%;
+  font-size: clamp(0.95rem, 1.6vw, 1.1rem);
+  margin-top: 0.75rem;
+  border-radius: clamp(0.5rem, 2.5vw, 1rem);
 }
 
 .perfilInfo span {
-  font-weight: bold;
-  font-size: 100px;
-  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: clamp(1.05rem, 2.4vw, 1.6rem);
+  margin-bottom: 1rem;
 }
 
 
 .inputInfo label {
-  margin-bottom: 90px;
-  font-size: 90px;
+  margin-bottom: 1rem;
+  font-size: clamp(0.95rem, 1.6vw, 1.05rem);
   font-weight: normal;
   color: #000;
-  margin-top: 10px;
+  margin-top: 0.5rem;
 }
 
 .inputInfo span {
@@ -146,36 +142,35 @@
 }
 
 .inputInfo input {
-  padding: 10px;
-  border-radius: 30px;
+  padding: clamp(0.5rem, 1.6vw, 0.75rem);
+  border-radius: clamp(0.5rem, 2.5vw, 1rem);
   border: 1px solid #ccc;
-  font-size: 80px;
-  width: 80%;
+  font-size: clamp(0.95rem, 1.6vw, 1.05rem);
+  width: 100%;
   background-color: #eee;
-  margin-top: 70px;
+  margin-top: 0.75rem;
 }
 
 .buttonSection  {
-  width: 35%;
-  min-width: 400px;         
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 580px;
-  margin-right: 60px;
+  margin-top: 1.5rem;
+  margin-right: 0;
 }
 
 .buttonSection button {
   background-color: #ffffff;
   border: none;
-  padding: 20px;
-  margin-bottom: 195px;
-  width: 100%;              
-  border-radius: 30px;
+  padding: clamp(0.5rem, 1.6vw, 0.9rem);
+  margin-bottom: 1.25rem;
+  width: 100%;
+  border-radius: clamp(0.5rem, 2.5vw, 1rem);
   cursor: pointer;
   font-weight: bold;
   transition: 0.3s;
-  font-size: 80px;        
+  font-size: clamp(0.95rem, 1.6vw, 1.05rem);
 }
 
 .buttonSection button:hover {
