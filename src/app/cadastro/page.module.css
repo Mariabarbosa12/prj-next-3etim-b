@@ -27,7 +27,7 @@
 }
 
 .title {
-  font-size: clamp(1.25rem, 4vw, 1.8rem);
+  font-size: clamp(1.25rem, 4vw, 1.9rem);
   color: white;
   margin-bottom: 1.25rem;
   margin-top: 1rem;
@@ -40,7 +40,7 @@
   margin-bottom: 0.6rem;
   border-radius: clamp(0.45rem, 2.5vw, 0.9rem);
   border: none;
-  font-size: clamp(0.9rem, 1.4vw, 1rem);
+  font-size: clamp(0.9rem, 1.4vw, 1.5rem);
   margin-top: 0.8rem;
 }
 
@@ -48,7 +48,7 @@
   align-items: center;
   width: min(260px, 70%);
   padding: clamp(0.45rem, 1.4vw, 0.8rem);
-  font-size: clamp(0.9rem, 1.4vw, 1rem);
+  font-size: clamp(0.9rem, 1.4vw, 1.5rem);
   background-color: white;
   color: #333;
   border: none;
