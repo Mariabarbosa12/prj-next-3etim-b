@@ -26,8 +26,8 @@ export default function Perfil() {
               <Image
                 src="/usu.png"
                 alt="Foto de Perfil"
-                width={360}
-                height={360}
+                width={160}
+                height={160}
                 className={styles.profileImage}
               />
               <div >

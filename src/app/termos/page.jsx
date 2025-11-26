@@ -22,10 +22,10 @@ export default function termos() {
       <div className={styles.container}>
         <p className={styles.sm}>Termos de uso e Politica de privacidade:</p>
 
-       <div className={styles.texto}>
-       <div className={styles.boxTexto}>
+  <div className={styles.texto}>
+  <div className={styles.boxTexto}>
 
-      <p className={styles.txt}>
+      <div className={styles.txt}>
        <p className={styles.titulo}> 1. Termos</p>
 Ao acessar ao site IRRIGAÇÃO AUTOMATIZADA: Desenvolvimento de um Sistema Web e Mobile Integrado ao ESP32 para Monitoramento de Cultivos Agrícolas., concorda em cumprir estes termos de serviço, todas as leis e regulamentos aplicáveis e concorda que é responsável pelo cumprimento de todas as leis locais aplicáveis.
 Se você não concordar com algum desses termos, está proibido de usar ou acessar este site. Os materiais contidos neste site são protegidos pelas leis de direitos autorais e marcas comerciais aplicáveis.
@@ -60,9 +60,9 @@ Modificações
 O IRRIGAÇÃO AUTOMATIZADA: Desenvolvimento de um Sistema Web e Mobile Integrado ao ESP32 para Monitoramento de Cultivos Agrícolas. pode revisar estes termos de serviço do site a qualquer momento, sem aviso prévio.
 Ao usar este site, você concorda em ficar vinculado à versão atual desses termos de serviço.
 Lei aplicável
-Estes termos e condições são regidos e interpretados de acordo com as leis do IRRIGAÇÃO AUTOMATIZADA: Desenvolvimento de um Sistema Web e Mobile Integrado ao ESP32 para Monitoramento de Cultivos Agrícolas. e você se submete irrevogavelmente à jurisdição exclusiva dos tribunais naquele estado ou localidade.</p>
+Estes termos e condições são regidos e interpretados de acordo com as leis do IRRIGAÇÃO AUTOMATIZADA: Desenvolvimento de um Sistema Web e Mobile Integrado ao ESP32 para Monitoramento de Cultivos Agrícolas. e você se submete irrevogavelmente à jurisdição exclusiva dos tribunais naquele estado ou localidade.</div>
 
-<p className={styles.txtDois}>
+<div className={styles.txtDois}>
 
   <p className={styles.titulo}>2. Privacidade</p>
   <p className={styles.paragrafo}>A sua privacidade é importante para nós. É política do IRRIGAÇÃO AUTOMATIZADA: Desenvolvimento de um Sistema Web e Mobile 
@@ -115,9 +115,9 @@ Estes termos e condições são regidos e interpretados de acordo com as leis do
  <p className={styles.paragrafo}> Esperemos que esteja esclarecido e, como mencionado anteriormente, se houver algo que você não tem certeza se precisa ou não, geralmente é mais seguro deixar os cookies ativados, caso interaja com um dos recursos
    que você usa em nosso site.
   Esta política é efetiva a partir de 17 November 2025 18:07.</p>
-</p>
-     </div>
-     </div>
+</div>
+  </div>
+  </div>
       </div>
     </div>
   );
