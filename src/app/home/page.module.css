@@ -62,7 +62,7 @@
 .card {
   background-color: #cfe8ff;
   border-radius: clamp(0.6rem, 3vw, 1rem);
-  flex: 1 1 40%;
+  width: 45%;
   padding: clamp(0.6rem, 2.5vw, 1rem);
   text-align: center;
   margin-top: 0.75rem;
@@ -76,13 +76,13 @@
 }
 
 .cardTxt{
-  font-size: clamp(1rem, 2.5vw, 1.4rem);
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
   margin-bottom: 1.6rem;
   color: #0c1792;
 }
 
 .card p {
-  font-size: clamp(1rem, 2.5vw, 1.6rem);
+  font-size: clamp(1rem, 2.5vw, 1.7rem);
   margin-top: 1.8rem;
   margin-bottom: 0.6rem;
   color: #0c1792;
@@ -114,7 +114,7 @@
   background-color: #e0f0ff;
   border: none;
   border-radius: 1rem;
-  padding: 0.5rem;
+  padding: 0.7rem;
   width: auto;
   height: auto;
   display: flex;
@@ -129,7 +129,7 @@
   background-color: #89c47d;
  border: none;
   border-radius: 1rem;
-  padding: 0.5rem;
+  padding: 0.7rem;
   width: auto;
   height: auto;
   display: flex;

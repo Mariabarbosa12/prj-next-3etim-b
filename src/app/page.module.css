@@ -20,7 +20,7 @@
   padding: clamp(1rem, 2.5vw, 2rem);
   border-radius: clamp(0.75rem, 4vw, 1.5rem);
   margin: 1.5rem auto;
-  margin-top: clamp(1.5rem, 10vh, 4rem);
+  margin-top: clamp(1.5rem, 10vh, 9rem);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,14 +34,14 @@
 }
 
 .imgl {
-  height: clamp(6rem, 18vw, 12rem);
-  margin-right: 0.75rem;
+  height: clamp(6rem, 18vw, 10rem);
+  margin-right: 2.1rem;
   margin-top: clamp(0.5rem, 4vw, 2.5rem);
 }
 
 .titulo {
   font-family: 'Poppins', sans-serif;
-  font-size: clamp(1.6rem, 4.5vw, 2.6rem);
+  font-size: clamp(1.6rem, 4.5vw, 3rem);
   color: black;
   margin-top: 1.5rem;
   margin-bottom: 1.25rem;
@@ -51,9 +51,9 @@
 .p {
   font-family: 'Poppins', sans-serif;
   padding: 0.5rem 0;
-  font-size: clamp(0.95rem, 2.2vw, 1.1rem);
+  font-size: clamp(0.95rem, 2.2vw, 2.5rem);
   margin-bottom: 0.75rem;
-  margin-top: 1rem;
+  margin-top: 1.7rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -73,13 +73,13 @@
   border-radius: clamp(0.5rem, 2.5vw, 1rem);
   cursor: pointer;
   transition: 0.3s;
-  margin-top: clamp(1rem, 8vh, 3rem);
+  margin-top: clamp(1rem, 8vh, 6rem);
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
 }
 
 .txtButton {
-  font-size: clamp(0.95rem, 1.6vw, 1.2rem);
+  font-size: clamp(0.95rem, 1.6vw, 2.2rem);
 }
 
 .button:hover {

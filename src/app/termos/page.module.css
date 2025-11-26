@@ -55,13 +55,14 @@
 }
 
 .sm { font-size: clamp(1rem, 2.8vw, 1.6rem); margin-bottom: 0.75rem; margin-top: 0.75rem; }
-.txt { font-size: clamp(0.95rem, 1.8vw, 1rem); }
-.txtDois { font-size: clamp(0.95rem, 1.8vw, 1rem); margin-top: 1.25rem; }
+.txt { font-size: clamp(0.95rem, 1.8vw, 1rem);  color: #000000;}
+.txtDois { font-size: clamp(0.95rem, 1.8vw, 1rem); margin-top: 1.25rem;  }
 .titulo { font-size: clamp(1.1rem, 2.4vw, 1.6rem); margin-top: 0.75rem; margin-bottom: 0.5rem; }
 
 .paragrafo {
   margin-top: 25px;
   margin-bottom: 10px;
+  color: #000000;
 }
 
 .boxTexto {
