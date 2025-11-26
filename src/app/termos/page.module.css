@@ -34,7 +34,7 @@
 
 .backButton {
   position: absolute;
-  left: 15px;
+  left: 1rem;
   background: none;
   border: none;
   cursor: pointer;

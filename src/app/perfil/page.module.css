@@ -40,13 +40,13 @@
 }
 
 .backButton {
-  position: absolute;
+ position: absolute;
   left: 1rem;
   background: none;
   border: none;
-  font-size: clamp(0.95rem, 1.6vw, 1.1rem);
   cursor: pointer;
 }
+
 
 
 .container {

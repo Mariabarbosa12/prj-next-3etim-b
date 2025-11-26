@@ -13,7 +13,7 @@ export default function termos() {
         <Link  href={'/home'}
           className={styles.backButton}
         >
-          <Image src="/voltar.png" alt="Voltar" width={130} height={124} priority />
+          <img src="/voltar.png" alt="Voltar" />
         </Link>
           <img src="/logo.png" alt="Logo BLUVA" />
         <span>BLUVA</span>
