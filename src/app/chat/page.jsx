@@ -23,7 +23,7 @@ export default function chat() {
 
       <iframe 
         src="https://bluva-horti-helper-264805782463.us-west1.run.app" 
-        height="3200" 
+        height="600" 
         style={{ border: 'none', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }}
         title="BLUVA Horti Helper"
       />
