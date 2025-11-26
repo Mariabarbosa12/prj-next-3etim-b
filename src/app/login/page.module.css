@@ -1,3 +1,4 @@
+/* Login page - compact responsive styles */
 .body {
   font-family: "Lucida Sans", sans-serif;
   background-image: url('/fundo.png');
@@ -11,76 +12,65 @@
 }
 
 .loginContainer {
-  background-color: rgba(173, 216, 230, 0.9);
-  width: 40%;
-  min-width: 100px;
-  min-height: 70vh;  
-  height: auto;
-  padding: 40px;
-  border-radius: 50px;
-  margin: 150px auto;
-  margin-top: 300px;
+  background-color: rgba(173, 216, 230, 0.92);
+  width: min(520px, 94%);
+  min-width: 16rem;
+  min-height: 48vh;
+  padding: clamp(0.6rem, 1.8vw, 0.95rem);
+  border-radius: clamp(0.5rem, 3vw, 1rem);
+  margin: clamp(0.75rem, 6vh, 2rem) auto 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .loginContainer h1 {
-  font-size: 280px;
+  font-size: clamp(1.25rem, 4vw, 1.6rem);
   color: white;
-  margin-bottom: 45px;
-  margin-top: 20px;
-}
- 
-.img {
-  margin-top: 120px;
+  margin-bottom: 0.9rem;
+  margin-top: 0.5rem;
 }
 
+.img { margin-top: 0.6rem; }
+
 .input {
-  width: 90%;
-  
-  padding: 60px;
-  margin-bottom: 90px;
-  border-radius:30px;
+  width: 92%;
+  padding: clamp(0.4rem, 1.6vw, 0.6rem);
+  margin-bottom: 0.9rem;
+  border-radius: clamp(0.4rem, 2.5vw, 0.7rem);
   border: none;
-  font-size: 110px;
-  margin-top: 120px;
+  font-size: clamp(0.9rem, 1.2vw, 1rem);
 }
 
 .loginBtn {
-  width: 40%;
-  
-  padding: 50px;
-  font-size: 110px;
+  width: min(240px, 72%);
+  padding: clamp(0.45rem, 1.2vw, 0.75rem);
+  font-size: clamp(0.9rem, 1.2vw, 1rem);
   background-color: white;
   color: #333;
   border: none;
-  border-radius: 30px;
+  border-radius: clamp(0.4rem, 2.5vw, 0.75rem);
   cursor: pointer;
-  font-weight: bold;
+  font-weight: 700;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 100px auto 90px auto;
-  transition: background-color 0.3s;
+  margin: 0.9rem auto 0.6rem auto;
+  transition: background-color 0.2s;
   text-decoration: none;
-
 }
 
-.loginBtn:hover {
-  background-color: #f0f0f0;
-}
+.loginBtn:hover { background-color: #f0f0f0; }
 
 .loginContainer p {
-  margin-top: 15px;
-  font-size: 100px;
+  margin-top: 0.6rem;
+  font-size: clamp(0.9rem, 1.2vw, 1rem);
   color: white;
 }
 
-.link {
-  color: white;
-  text-decoration: underline;
-  cursor: pointer;
-}
+.link { color: white; text-decoration: underline; cursor: pointer; }
 
-    
+@media (min-width: 720px) {
+  .loginContainer { width: min(520px, 100%); }
+}
+ 

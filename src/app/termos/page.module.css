@@ -20,10 +20,16 @@
   border-bottom: 2px solid #ccc;
   gap: 10px;
 }
+.header img {
+  /* Smaller max image height for header */
+  height: clamp(2.5rem, 6vw, 5rem);
+  margin-right: 0.5rem;
+}
+
 .header span {
   color: #0c1792;
-  font-size: clamp(1.2rem, 3.5vw, 2rem);
-  font-weight: 700;
+  font-size: clamp(1.2rem, 3.5vw, 2.2rem);
+  font-weight: bold;
 }
 
 .backButton {

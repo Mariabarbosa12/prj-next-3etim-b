@@ -15,7 +15,7 @@ export default function termos() {
         >
           <Image src="/voltar.png" alt="Voltar" width={130} height={124} priority />
         </Link>
-        <Image src="/logo.png" alt="Logo BLUVA" width={180} height={180} priority />
+          <img src="/logo.png" alt="Logo BLUVA" />
         <span>BLUVA</span>
       </div>
 

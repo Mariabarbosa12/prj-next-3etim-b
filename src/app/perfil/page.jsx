@@ -13,7 +13,7 @@ export default function Perfil() {
         >
           <Image src="/voltar.png" alt="Voltar" width={130} height={124} priority />
         </Link>
-        <Image src="/logo.png" alt="BLUVA logo" width={180} height={180} />
+       <img src="/logo.png" alt="Logo BLUVA" />
         <span>BLUVA</span>
       </header>
 

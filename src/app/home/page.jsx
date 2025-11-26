@@ -31,7 +31,7 @@ export default function Home() {
   return (
     <div className={styles.body}>
       <header className={styles.header}>
-        <Image src="/logo.png" alt="Logo BLUVA" width={180} height={180} />
+         <img src="/logo.png" alt="Logo BLUVA" />
         <span>BLUVA</span>
       </header>
 
@@ -51,13 +51,13 @@ export default function Home() {
         <div className={styles.sensorCards}>
           <div className={styles.card}>
             <h3 className={styles.cardTxt}>UMIDADE</h3>
-            <Image src="/umidade.png" alt="Umidade" width={189} height={181} />
+            <Image src="/umidade.png" alt="Umidade" width={115} height={115} />
             <p>{localSelecionado.umidade}</p>
           </div>
 
           <div className={styles.card}>
             <h3 className={styles.cardTxt}>TEMPERATURA</h3>
-            <Image src="/temperatura.png" alt="Temperatura" width={181} height={184} />
+            <Image src="/temperatura.png" alt="Temperatura" width={115} height={115} />
             <p>{localSelecionado.temperatura}</p>
           </div>
         </div>

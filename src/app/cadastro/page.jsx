@@ -8,7 +8,7 @@ export default function cadastro() {
   return (
     <div className={styles.body}>
       <div className={styles.cadastroContainer}>
-     <Image className={styles.img} src="/usu.png" alt="Usuário" width={500} height={500} />
+     <Image className={styles.img} src="/usu.png" alt="Usuário" width={130} height={130} />
     
         <h1 className={styles.title}>Cadastre-se</h1>
 

@@ -13,7 +13,7 @@ export default function chat() {
          <Link  href={'/home'}
           className={styles.backButton}
         >
-          <Image src="/voltar.png" alt="Voltar" width={135} height={114} priority />
+          <Image src="/voltar.png" alt="Voltar" width={100} height={100} priority />
         </Link>
         <img src="/logo.png" alt="Logo BLUVA" />
         <span>BLUVA</span>
@@ -23,7 +23,7 @@ export default function chat() {
 
       <iframe 
         src="https://bluva-horti-helper-264805782463.us-west1.run.app" 
-        height="700" 
+        height="750" 
         style={{ border: 'none', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }}
         title="BLUVA Horti Helper"
       />

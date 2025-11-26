@@ -22,44 +22,50 @@
   gap: 0.5rem;
 }
 
+.header img {
+  /* Smaller max image height for header */
+  height: clamp(2.5rem, 6vw, 5rem);
+  margin-right: 0.5rem;
+}
+
 .header span {
   color: #0c1792;
   /* Reduced max to avoid extremely large headings on wide screens */
-  font-size: clamp(1.4rem, 4vw, 2.8rem);
+  font-size: clamp(1.2rem, 3.5vw, 2.2rem);
   font-weight: 700;
 }
 
 .container {
-  background-color: rgba(255, 255, 255, 0.78);
-  width: 90%;
-  max-width: 900px;
-  min-width: 10rem;
-  min-height: 65vh;
-  padding: clamp(0.75rem, 2.5vw, 2rem);
-  border-radius: clamp(0.75rem, 4vw, 3rem);
+  background-color: rgba(255, 255, 255, 0.86);
+  width: 92%;
+  max-width: 780px;
+  min-width: 12rem;
+  min-height: 55vh;
+  padding: clamp(0.6rem, 1.6vw, 1rem);
+  border-radius: clamp(0.6rem, 3vw, 1rem);
   /* Prevent huge vertical offset on large screens */
-  margin-top: clamp(1.5rem, 8vh, 5rem);
+  margin-top: clamp(1rem, 6vh, 3rem);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .sensorCards {
-  padding: clamp(0.75rem, 3vw, 1.75rem);
+  padding: clamp(0.5rem, 2vw, 1rem);
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: 10%;
-  gap: 1rem;
+  margin-bottom: clamp(1rem, 4vh, 2rem);
+  gap: clamp(0.5rem, 2vw, 1rem);
 }
 
 .card {
   background-color: #cfe8ff;
-  border-radius: clamp(0.75rem, 4vw, 2rem);
+  border-radius: clamp(0.6rem, 3vw, 1rem);
   flex: 1 1 40%;
-  padding: clamp(0.75rem, 4vw, 1.5rem);
+  padding: clamp(0.6rem, 2.5vw, 1rem);
   text-align: center;
-  margin-top: 1.25rem;
+  margin-top: 0.75rem;
   color: #0c1792;
   font-weight: 700;
   display: flex;
@@ -69,15 +75,15 @@
 }
 
 .cardTxt{
-  font-size: clamp(1.1rem, 3.2vw, 2.2rem);
-  margin-bottom: 2rem;
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
+  margin-bottom: 1rem;
   color: #0c1792;
 }
 
 .card p {
-  font-size: clamp(1rem, 3.2vw, 2rem);
-  margin-top: 1.5rem;
-  margin-bottom: 1rem;
+  font-size: clamp(0.95rem, 2.5vw, 1.2rem);
+  margin-top: 0.8rem;
+  margin-bottom: 0.6rem;
   color: #0c1792;
 }
 
@@ -88,13 +94,13 @@
 }
 
 .localSelect select {
-  font-size: clamp(0.95rem, 2.8vw, 1.4rem);
+  font-size: clamp(0.9rem, 2.2vw, 1.05rem);
   background-color: #cfe8ff;
   color: #0c1792;
-  border-radius: clamp(0.5rem, 3vw, 2rem);
-  margin-top: 1.5rem;
-  margin-bottom: 2rem;
-  margin-left: clamp(0.5rem, 8vw, 4rem);
+  border-radius: clamp(0.45rem, 2.5vw, 0.9rem);
+  margin-top: clamp(0.6rem, 3vh, 1rem);
+  margin-bottom: clamp(0.6rem, 3vh, 0.8rem);
+  margin-left: clamp(0.25rem, 4vw, 1rem);
 }
 
 .buttonRow {
@@ -106,31 +112,38 @@
 .iconButton {
   background-color: #e0f0ff;
   border: none;
-  border-radius: 1.5rem;
-  padding: 0.75rem;
+  border-radius: 1rem;
+  padding: 0.5rem;
   width: auto;
   height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: background-color 0.3s;
-  margin-top: clamp(0.5rem, 6vh, 2.5rem);
+  transition: background-color 0.2s;
+  margin-top: clamp(0.4rem, 3vh, 1rem);
 }
 
 .iconButtonG {
   background-color: #89c47d;
   border: none;
-  border-radius: 1.5rem;
-  padding: clamp(0.75rem, 4vw, 1.5rem);
+  border-radius: 1rem;
+  padding: clamp(0.5rem, 2.5vw, 0.9rem);
   width: auto;
   height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: background-color 0.3s;
-  margin-top: clamp(0.5rem, 6.5vh, 2.8rem);
+  transition: background-color 0.2s;
+  margin-top: clamp(0.4rem, 3vh, 1rem);
+}
+
+/* Small screen adjustments: stack cards vertically */
+@media (max-width: 720px) {
+  .sensorCards { flex-direction: column; gap: clamp(0.5rem, 2vw, 1rem); }
+  .card { width: 100%; }
+  .header span { font-size: clamp(1.1rem, 4vw, 1.6rem); }
 }
 
 .off { background-color: #dd5a4c !important; }
