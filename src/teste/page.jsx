@@ -7,6 +7,7 @@ export default function Teste() {
             <Link href={'/usuarios/login'}>Login</Link> <br />
             <Link href={'/usuarios/cadastro'}>cadastro</Link> <br />
             <Link href={'/home'}>PG de Entrada</Link> <br />
+            <Link href={'/quest'}>Questionario</Link> <br />
             <Link href={'/termos'}>Termos</Link> <br />
             <Link href={'/chat'}>Chat</Link> <br />
             <Link href={'/contatos'}>Contatos</Link> <br />

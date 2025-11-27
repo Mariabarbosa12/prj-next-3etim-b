@@ -45,9 +45,11 @@ export default function Home() {
               </option>
             ))}
           </select>
+          <Link href='/quest'> 
           <button className={styles.iconBut}>
               <Image src="/plus.png" alt="Mais" width={15} height={15} />
-            </button>
+            </button> 
+            </Link>
         </div>
 
         {/* Sensores alterados conforme o local */}
