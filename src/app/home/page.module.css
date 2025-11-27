@@ -102,6 +102,7 @@
   margin-top: clamp(0.6rem, 3vh, 1rem);
   margin-bottom: clamp(0.6rem, 3vh, 0.8rem);
   margin-left: clamp(0.25rem, 4vw, 1rem);
+   margin-right: clamp(0.25rem, 4vw, 1rem);
 }
 
 .buttonRow {
@@ -109,6 +110,22 @@
   justify-content: space-around;
   width: 100%;
 }
+
+.iconBut {
+  background-color: #cfe8ff;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.7rem;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: clamp(0.4rem, 3vh, 0.5rem);
+}
+
 
 .iconButton {
   background-color: #e0f0ff;

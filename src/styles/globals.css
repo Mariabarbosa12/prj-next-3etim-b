@@ -104,6 +104,19 @@ a { color: var(--accent); text-decoration: none; }
   :root { --container-max: 1000px; }
 }
 
+@media (max-width: 450px) {
+  html {
+    font-size: 65%;
+  }
+}
+
+
+@media (max-width: 340px) {
+  html {
+    font-size: 50%;
+  }
+}
+
 /* Utility: center content */
 .center { display: flex; align-items: center; justify-content: center; }
 

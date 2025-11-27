@@ -9,7 +9,7 @@ import Link from "next/link";
 export default function Home() {
   const [isOn, setIsOn] = useState(true);
 
-  // Dados simulados (substitua pelo que vem do banco)
+  
   const locais = [
     { id: 1, nome: "Estufa 1", umidade: "85%", temperatura: "24°C" },
     { id: 2, nome: "Estufa 2", umidade: "70%", temperatura: "22°C" },
@@ -45,6 +45,9 @@ export default function Home() {
               </option>
             ))}
           </select>
+          <button className={styles.iconBut}>
+              <Image src="/plus.png" alt="Mais" width={15} height={15} />
+            </button>
         </div>
 
         {/* Sensores alterados conforme o local */}
