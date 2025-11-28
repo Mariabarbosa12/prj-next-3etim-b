@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import styles from './index.module.css';
 
+
 export default function Card({ prod }) {
     return (
         <Link href={`/mensagens/mensagem${prod.id}`} className={styles.card}>
