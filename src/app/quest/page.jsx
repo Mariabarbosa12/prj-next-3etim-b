@@ -30,11 +30,18 @@ export default function quest() {
         className={styles.input}
       />
 
-       <p className={styles.txt}> ID DO ESP DESEJADO:</p>
+       <p className={styles.txt}> ID DO LOCAL DESEJADO:</p>
        <input
         type="text"
-        placeholder="Identidade do esp"
-        id="id_esp"
+        placeholder="Identidade do local"
+        id="local"
+        className={styles.input}
+      />
+       <p className={styles.txt}> STATUS DO LOCAL DESEJADO:</p>
+       <input
+        type="text"
+        placeholder="Status do local"
+        id="status"
         className={styles.input}
       />
       
