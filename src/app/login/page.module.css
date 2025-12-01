@@ -44,7 +44,7 @@
 }
 
 .loginBtn {
-  width: min(240px, 72%);
+  width: min(240px, 100%);
   padding: clamp(0.45rem, 1.2vw, 0.75rem);
   font-size: clamp(0.9rem, 1.2vw, 1.5rem);
   background-color: white;
