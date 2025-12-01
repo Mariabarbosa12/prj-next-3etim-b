@@ -61,9 +61,9 @@ export default function Perfil() {
             <button>ALTERAR APELIDO</button>
             <button>ALTERAR DADOS PESSOAIS</button>
             <button>EXCLUIR CONTA</button>
-           
+           <Link href="/entrada">
             <button>SAIR DA CONTA</button> 
-            
+            </Link>
           </div>
         </section>
       </main>
