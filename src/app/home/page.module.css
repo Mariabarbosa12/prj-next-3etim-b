@@ -66,7 +66,23 @@
   padding: clamp(0.6rem, 2.5vw, 1rem);
   text-align: center;
   margin-top: 0.75rem;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
+  color: #0c1792;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardNivel {
+  background-color: #cfe8ff;
+  border-radius: clamp(0.6rem, 3vw, 1rem);
+  width: 30%;
+  padding: clamp(0.6rem, 2.5vw, 1rem);
+  text-align: center;
+  margin-top: 0.1rem;
+  margin-bottom: 1rem;
   color: #0c1792;
   font-weight: 700;
   display: flex;
@@ -80,6 +96,18 @@
   margin-bottom: 1.6rem;
   color: #0c1792;
 }
+.cardNxt{
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  margin-bottom: 1.6rem;
+  color: #0c1792;
+}
+
+.txt{
+  font-size: clamp(1rem, 2.5vw, 0.7rem);
+  margin-bottom: 1.6rem;
+  color: #0c1792;
+}
+
 
 .card p {
   font-size: clamp(1rem, 2.5vw, 1.7rem);
