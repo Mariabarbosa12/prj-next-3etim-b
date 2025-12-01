@@ -24,6 +24,13 @@ export default function cadastro() {
           id="email"
           className={styles.input}
         />
+
+        <input
+        type="text"
+        placeholder="Telefone "
+          id="telefone"
+          className={styles.input}
+                />
         <input
           type="password"
           placeholder="Senha"
