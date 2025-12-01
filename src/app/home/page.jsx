@@ -140,9 +140,9 @@ export default function Home() {
             </button>
           </Link>
 
-          <Link href="/peril">
+          <Link href="/perfil">
             <button className={styles.iconButton}>
-              <Image src="/user.png" alt="peril" width={75} height={75} />
+              <Image src="/user.png" alt="perfil" width={75} height={75} />
             </button>
           </Link>
 
