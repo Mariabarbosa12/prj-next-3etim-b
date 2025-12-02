@@ -114,7 +114,7 @@ export default function Cadastro() {
                 
                 <input
                     type="text"
-                    placeholder="Telefone (ex: 11999998888)"
+                    placeholder="Telefone"
                     name="telefone"
                     value={dados.telefone}
                     onChange={handleChange}

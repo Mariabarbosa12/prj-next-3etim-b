@@ -43,11 +43,11 @@ export default function Perfil() {
               </label>
               <label>
                 <span>EMAIL:</span>
-                <input type="text" value="joao.silva@email.com" disabled />
+                <input type="text" value="joaosm@email.com" disabled />
               </label>
               <label>
                 <span>TELEFONE:</span>
-                <input type="text" value="(11) 91234-5678" disabled />
+                <input type="text" value="14 991234567" disabled />
               </label>
               <label>
                 <span>SENHA:</span>
