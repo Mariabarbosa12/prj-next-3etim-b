@@ -30,8 +30,20 @@ export default function Login() {
             const response = await api.get(`/login?email=${encodeURIComponent(email)}&senha=${encodeURIComponent(senha)}`);
 
             // O backend retorna status 403 com a mensagem de erro
-            if (response?.status === 200) {
-                // Sucesso
+            if (response?.status === 200 && response?.data?.sucesso) {
+                // Sucesso: salva dados retornados pela API no localStorage para identificar usuário
+                try {
+                    const userData = response.data.dados || null;
+                    if (userData) {
+                        // chave: 'user' — pode ser alterada se preferir outro nome
+                        localStorage.setItem('user', JSON.stringify(userData));
+                        // também armazenamos um flag simples
+                        localStorage.setItem('isLogged', 'true');
+                    }
+                } catch (e) {
+                    console.warn('Não foi possível salvar dados no localStorage:', e);
+                }
+                // Redireciona para home
                 router.push('/home');
             } else if (response?.data?.mensagem) {
                 // Captura mensagem de erro do backend se disponível (ex: "E-mail ou senha inválidos.")
