@@ -10,6 +10,8 @@ import api from '@/services/api';
 export default function Perfil() {
   const [user, setUser] = useState({ nome: '', tipo_usu: '', id_usu: null, email: '', telefone: '' });
   const router = useRouter();
+  const [editing, setEditing] = useState(false);
+  const [form, setForm] = useState({ nome: '', email: '', telefone: '' });
 
   useEffect(() => {
     try {
@@ -25,7 +27,7 @@ export default function Perfil() {
           telefone: parsed.telefone || prev.telefone,
         }));
 
-        // Se tivermos um id de usuário, buscar dados completos na API
+  // Se tivermos um id de usuário, buscar dados completos na API
         if (parsed.id_usu) {
           const fetchUser = async (id) => {
             try {
@@ -56,6 +58,76 @@ export default function Perfil() {
       console.warn('Erro ao ler user do localStorage:', e);
     }
   }, []);
+
+  // sincroniza o form com o estado do usuário quando ele muda
+  useEffect(() => {
+    setForm({ nome: user.nome || '', email: user.email || '', telefone: user.telefone || '' });
+  }, [user.nome, user.email, user.telefone]);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setForm((s) => ({ ...s, [name]: value }));
+  };
+
+  const handleEditClick = () => {
+    setEditing(true);
+  };
+
+  const handleCancel = () => {
+    // reverte para os valores do servidor
+    setForm({ nome: user.nome || '', email: user.email || '', telefone: user.telefone || '' });
+    setEditing(false);
+  };
+
+  const handleSave = async () => {
+    if (!user.id_usu) {
+      alert('ID do usuário não encontrado. Faça login novamente.');
+      return;
+    }
+
+    const payload = {
+      tipo_usu: user.tipo_usu || '1',
+      nome: form.nome,
+      email: form.email,
+      telefone: form.telefone,
+    };
+
+    // Usar apenas o endpoint PUT /usuarios/:id conforme informado, para evitar tentativas que geram 404s no console
+    try {
+      const res = await api.patch(`/usuarios/${user.id_usu}`, payload);
+      if (res?.data?.sucesso) {
+        const updated = (res.data.dados && res.data.dados[0]) ? res.data.dados[0] : { ...user, ...payload };
+        setUser((prev) => ({ ...prev, ...updated }));
+        try {
+          localStorage.setItem('user', JSON.stringify({ ...prevSafe(user), ...payload }));
+        } catch (e) {
+          localStorage.setItem('user', JSON.stringify(updated));
+        }
+        setEditing(false);
+        alert('Dados atualizados com sucesso.');
+      } else {
+        console.warn('Resposta inesperada ao atualizar usuário:', res?.data);
+        alert('Não foi possível atualizar. Veja o console para mais detalhes.');
+      }
+    } catch (err) {
+      console.error('Erro ao atualizar usuário:', err);
+      const status = err?.response?.status;
+      if (status === 404) {
+        alert('Rota não encontrada (404). O backend pode estar esperando outro endpoint ou método. Me envie o registro de rede (Network) que funcionou para eu ajustar.');
+      } else {
+        alert('Erro ao atualizar usuário. Verifique o console e a API.');
+      }
+    }
+  };
+
+  // helper para garantir cópia segura do user atual
+  const prevSafe = (u) => ({
+    id_usu: u?.id_usu ?? null,
+    tipo_usu: u?.tipo_usu ?? '1',
+    nome: u?.nome ?? '',
+    email: u?.email ?? '',
+    telefone: u?.telefone ?? '',
+  });
 
   return (
     <div className={styles.body}>
@@ -91,15 +163,15 @@ export default function Perfil() {
             <div className={styles.inputInfo}>
               <label>
                 <span>NOME:</span>
-                <input type="text" value={user.nome || ''} disabled />
+                <input name="nome" type="text" value={editing ? form.nome : (user.nome || '')} onChange={handleChange} disabled={!editing} />
               </label>
               <label>
                 <span>EMAIL:</span>
-                <input type="text" value={user.email || ''} disabled />
+                <input name="email" type="text" value={editing ? form.email : (user.email || '')} onChange={handleChange} disabled={!editing} />
               </label>
               <label>
                 <span>TELEFONE:</span>
-                <input type="text" value={user.telefone || ''} disabled />
+                <input name="telefone" type="text" value={editing ? form.telefone : (user.telefone || '')} onChange={handleChange} disabled={!editing} />
               </label>
               <label>
                 <span>SENHA:</span>
@@ -111,7 +183,14 @@ export default function Perfil() {
           <div className={styles.buttonSection}>
             <button>ALTERAR FOTO DE PERFIL</button>
             <button>ALTERAR APELIDO</button>
-            <button>ALTERAR DADOS PESSOAIS</button>
+            {!editing ? (
+              <button onClick={handleEditClick}>ALTERAR DADOS PESSOAIS</button>
+            ) : (
+              <>
+                <button onClick={handleSave}>SALVAR</button>
+                <button onClick={handleCancel}>CANCELAR</button>
+              </>
+            )}
             <button>EXCLUIR CONTA</button>
 
             <button onClick={() => {
