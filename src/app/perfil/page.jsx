@@ -39,11 +39,11 @@ export default function Perfil() {
             <div className={styles.inputInfo}>
               <label>
                 <span>NOME:</span>
-                <input type="text" value="João Silva" disabled />
+                <input type="text" value="Lara romero" disabled />
               </label>
               <label>
                 <span>EMAIL:</span>
-                <input type="text" value="joaosm@email.com" disabled />
+                <input type="text" value="lara.romero@email.com" disabled />
               </label>
               <label>
                 <span>TELEFONE:</span>
@@ -51,7 +51,7 @@ export default function Perfil() {
               </label>
               <label>
                 <span>SENHA:</span>
-                <input type="password" value="******" disabled />
+                <input type="password" value="********" disabled />
               </label>
             </div>
           </div>
